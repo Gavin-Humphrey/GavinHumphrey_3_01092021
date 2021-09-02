@@ -1,0 +1,344 @@
+.header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 2px solid #D3D3D3;
+}
+
+.header-main img {
+  width: 50%;
+}
+
+.maps {
+  background-color: #E6E6E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.maps input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #E6E6E6;
+  border-style: none;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn {
+  border-radius: 50px;
+  width: 60%;
+  height: 60px;
+  font-size: 18px;
+  border: none;
+  background: -webkit-gradient(linear, right bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: white;
+}
+
+footer {
+  background: #25221e;
+  height: 200px;
+  margin-top: 0px;
+}
+
+footer a, footer h3 {
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer h3 {
+  padding: 30px 0px 0px 40px;
+  font-family: 'Shrikhand';
+}
+
+@media (min-width: 1000px) {
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 30px;
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.description {
+  background: #F2F2F2;
+  height: 300px;
+  padding-bottom: 0px;
+  margin-top: -22px;
+}
+
+h1 {
+  padding: 40px 20px 0px 20px;
+  text-align: center;
+}
+
+.description p {
+  text-align: center;
+  padding: 0px 40px 0px 40px;
+}
+
+h2 {
+  margin-left: 15px;
+}
+
+.btn-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.function {
+  height: 350px;
+}
+
+.function__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 2px 2px #E6E6E6;
+          box-shadow: 2px 2px 2px 2px #E6E6E6;
+  border-radius: 20px;
+  background: #F2F2F2;
+  width: 90%;
+  height: 60px;
+  margin: 20px;
+  padding: 5px 0px 0px 0px;
+  font-size: 18px;
+}
+
+@media (min-width: 1000px) {
+  .function--container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .function {
+    height: 150px;
+  }
+  .restaurant__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.pink {
+  background: #efe2f2;
+}
+
+.function__number {
+  position: absolute;
+  background-color: #9356DC;
+  color: white;
+  font-size: 12px;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  top: 20px;
+  margin-left: -10px;
+}
+
+.function__icon {
+  margin: 40px;
+  color: gray;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+.restaurants {
+  width: 100%;
+  height: 1200px;
+  background-color: #F2F2F2;
+  margin-bottom: -20px;
+  padding-top: 40px;
+}
+
+.restaurant {
+  background-size: cover;
+  padding: 2rem;
+  max-width: 100%;
+  margin-top: 0px;
+}
+
+.card {
+  background: white;
+  -webkit-box-shadow: 2px 2px 2px #F2F2F2;
+          box-shadow: 2px 2px 2px #F2F2F2;
+  border-radius: 20px;
+  margin: 20px;
+  height: 250px;
+  position: relative;
+}
+
+.card img {
+  height: 150px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.card__img--new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: mediumseagreen;
+  background-color: #99E2D0;
+  height: 10px;
+  width: 50px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.card__text p {
+  margin-top: -15px;
+}
+
+.card__text {
+  padding-left: 20px;
+}
+
+.fa-heart {
+  float: right;
+  font-size: 25px;
+  padding: 30px;
+  text-transform: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card__description {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.page1 img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.fa-arrow-left {
+  padding: 20px;
+}
+
+.container--page1 {
+  background-color: #F2F2F2;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  top: -60px;
+  height: 100%;
+  margin-bottom: -100px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+}
+
+.container__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Shrikhand';
+  font-size: 26px;
+  padding: 30px;
+  margin: 0px;
+}
+
+.container__heart {
+  padding: 0px;
+  margin: 0px;
+}
+
+.page1 h3 {
+  color: black;
+}
+
+.function__page1 {
+  -webkit-box-shadow: 2px 2px 2px 2px #E6E6E6;
+          box-shadow: 2px 2px 2px 2px #E6E6E6;
+  border-radius: 20px;
+  background: white;
+  width: 85%;
+  height: 70px;
+  margin: 20px;
+  text-align: left;
+}
+
+.function__page1 h3 {
+  padding: 10px 0px 5px 10px;
+  margin: 0px;
+  font-size: 18px;
+}
+
+.function__page1 p {
+  margin: 0px;
+  padding: 0px 10px 0px 10px;
+  font-size: 16px;
+}
+
+.function__page1 .prix {
+  float: right;
+  font-weight: bold;
+}
+
+.function__title {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 0px;
+  font-weight: lighter;
+}
+/*# sourceMappingURL=main.css.map */

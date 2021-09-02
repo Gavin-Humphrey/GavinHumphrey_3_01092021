@@ -1,0 +1,63 @@
+.page1 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+}
+.fa-arrow-left{
+    padding: 20px;
+}
+.container--page1{
+    background-color: #F2F2F2;
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    top: -60px;
+    height: 100%;
+    margin-bottom: -100px; 
+    padding-bottom: 50px;
+    padding-left: 15px;
+
+}
+.container__title{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Shrikhand';font-size: 26px;;
+    padding: 30px;
+    margin: 0px;
+}
+.container__heart{
+    padding: 0px;
+    margin: 0px;
+}
+.page1 h3{
+    color: black;
+}
+.function__page1{
+    box-shadow: 2px 2px 2px 2px #E6E6E6;
+    border-radius: 20px;
+    background: white;
+    width: 85%;
+    height: 70px;
+    margin: 20px; 
+    text-align: left; 
+}
+.function__page1 h3{
+    padding: 10px 0px 5px 10px;
+    margin: 0px;
+    font-size: 18px;
+}
+.function__page1 p{
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 16px;
+}
+.function__page1 .prix{
+    float: right;
+    font-weight: bold;
+}
+.function__title{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 0px;
+    font-weight: lighter;
+}
