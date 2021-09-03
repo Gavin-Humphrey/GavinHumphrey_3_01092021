@@ -7,6 +7,7 @@
     background: linear-gradient(to top left, $primary-color, $secondary-color);
     color: $box-color;
     @include respond-to('medium'){
+        justify-content: center;
         width: 30%;
         font-size: 14px;
     }

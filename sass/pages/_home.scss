@@ -41,11 +41,14 @@ h2{
     &__cnt{
         @include respond-to('large'){
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+            justify-items: center;
+    
         }
         @include respond-to('medium'){
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(20%, 1fr));
+            grid-template-columns: repeat(auto-fit,minmax(80px, 1fr));
+            justify-items: center;
         }
         
         
@@ -62,10 +65,20 @@ h2{
     height: 60px;
     margin: 20px;
     padding: 5px 0px 0px 0px;
-    font-size: 18px;   
+    font-size: 18px;  
+    @include respond-to('large') {
+        width: 70%;
+        height: 80px;
+     
+    }
+    @include respond-to('medium') {
+        width: 80%;
+        height: 70px;
+        
+    }
 }
 .pink{
-    background:  $primary-color;
+    background:   #efe2f2;
 }
 .function__number{
     position: absolute;
@@ -88,7 +101,11 @@ h2{
 }
 .restaurant{
     height: auto;
-    background: $body-color;
+    background-color: $body-color;
+    h2{
+        padding: 30px 0px 0px 30px;
+    }
+    
     @include respond-to('medium') {
         width: 90%;
         justify-content: center;
@@ -103,11 +120,11 @@ h2{
     margin-top: 0px;
     @include respond-to('large') {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(2, 1fr));
     } 
     @include respond-to('medium') {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(2, 1fr));
     }
     @include respond-to('small'){
         display: grid;
