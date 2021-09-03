@@ -5,7 +5,7 @@
     font-size: 18px;
     border: none;
     background: linear-gradient(to top left, $primary-color, $secondary-color);
-    color: white;
+    color: $box-color;
     @include respond-to('medium'){
         width: 30%;
         font-size: 14px;

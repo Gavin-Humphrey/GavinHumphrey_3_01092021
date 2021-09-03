@@ -8,7 +8,7 @@
     padding: 20px;
 }
 .container__page1{
-    background-color: #F2F2F2;
+    background-color: $body-color;
     border-radius: 40px 40px 0px 0px;
     position: relative;
     top: -60px;
@@ -39,9 +39,9 @@
     color: black;
 }
 .function__page1{
-    box-shadow: 2px 2px 2px 2px #E6E6E6;
+    box-shadow: 2px 2px 2px 2px $bshadow-color;
     border-radius: 20px;
-    background: white;
+    background: $box-color;
     width: 85%;
     height: 70px;
     margin: 20px; 
