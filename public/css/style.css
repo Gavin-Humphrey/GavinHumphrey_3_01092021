@@ -37,6 +37,12 @@
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
 }
+@media (min-width: 800px) {
+  .btn {
+    width: 30%;
+    font-size: 14px;
+  }
+}
 
 footer {
   background: #25221e;
@@ -49,16 +55,23 @@ footer a, footer h3 {
 footer ul {
   list-style: none;
 }
-footer h3 {
-  padding: 30px 0px 0px 40px;
-  font-family: "Shrikhand";
-}
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   footer ul {
     display: flex;
     justify-content: space-between;
     margin-right: 30px;
   }
+}
+@media (min-width: 800px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+}
+footer h3 {
+  padding: 30px 0px 0px 40px;
+  font-family: "Shrikhand";
 }
 
 html, body {
@@ -101,6 +114,28 @@ h2 {
 .function {
   height: 350px;
 }
+@media (min-width: 1100px) {
+  .function {
+    height: 150px;
+  }
+}
+@media (min-width: 800px) {
+  .function {
+    height: 150px;
+  }
+}
+@media (min-width: 1100px) {
+  .function__cnt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+@media (min-width: 800px) {
+  .function__cnt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  }
+}
 
 .function__steps {
   display: flex;
@@ -115,21 +150,6 @@ h2 {
   font-size: 18px;
 }
 
-@media (min-width: 1000px) {
-  .function--container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
-
-  .function {
-    height: 150px;
-  }
-
-  .restaurant__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
 .pink {
   background: #efe2f2;
 }
@@ -156,22 +176,45 @@ h2 {
   color: #9356DC;
 }
 
-.restaurants {
-  width: 100%;
-  height: 1200px;
-  background-color: #F2F2F2;
-  margin-bottom: -20px;
-  padding-top: 40px;
+.restaurant {
+  height: auto;
+  background: #F2F2F2;
+}
+@media (min-width: 800px) {
+  .restaurant {
+    width: 90%;
+    justify-content: center;
+    margin-left: 5%;
+    border-radius: 20px;
+  }
 }
 
-.restaurant {
+.restaurant__container {
   background-size: cover;
   padding: 2rem;
   max-width: 100%;
   margin-top: 0px;
 }
+@media (min-width: 1100px) {
+  .restaurant__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (min-width: 800px) {
+  .restaurant__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media (min-width: 600px) {
+  .restaurant__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
 
-.card {
+.restaurant__card {
   background: white;
   box-shadow: 2px 2px 2px #F2F2F2;
   border-radius: 20px;
@@ -180,7 +223,7 @@ h2 {
   position: relative;
 }
 
-.card img {
+.restaurant__card img {
   height: 150px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
@@ -188,7 +231,7 @@ h2 {
   display: block;
 }
 
-.card__img--new {
+.restaurant__card--new {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -200,11 +243,11 @@ h2 {
   font-size: 12px;
 }
 
-.card__text p {
+.restaurant__card--text p {
   margin-top: -15px;
 }
 
-.card__text {
+.restaurant__card--text {
   padding-left: 20px;
 }
 
@@ -219,7 +262,7 @@ a {
   text-decoration: none;
 }
 
-.card__description {
+.restaurant__card--description {
   position: absolute;
   object-fit: contain;
 }
@@ -235,7 +278,7 @@ a {
   padding: 20px;
 }
 
-.container--page1 {
+.container__page1 {
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
   position: relative;
@@ -244,6 +287,12 @@ a {
   margin-bottom: -100px;
   padding-bottom: 50px;
   padding-left: 15px;
+}
+@media (min-width: 1100px) {
+  .container__page1__anime {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  }
 }
 
 .container__title {

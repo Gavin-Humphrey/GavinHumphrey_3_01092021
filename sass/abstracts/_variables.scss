@@ -4,3 +4,8 @@ $tetiary-color: #99E2D0;
 $body-color: #F2F2F2;
 $shaded-color: #D3D3D3;
 $footer-background: #25221e;
+$breakpoints: (
+    'small': 600px,
+    'medium': 800px,
+    'large': 1100px,
+) !default;

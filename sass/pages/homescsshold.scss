@@ -32,24 +32,6 @@ h2{
 }
 .function{
     height: 350px;
-    @include respond-to('large') {
-        height: 150px;
-    }
-    @include respond-to('medium') {
-        height: 150px;
-    }
-    &__cnt{
-        @include respond-to('large'){
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
-        }
-        @include respond-to('medium'){
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(20%, 1fr));
-        }
-        
-        
-    }
 }
 
 .function__steps{
@@ -62,7 +44,23 @@ h2{
     height: 60px;
     margin: 20px;
     padding: 5px 0px 0px 0px;
-    font-size: 18px;   
+    font-size: 18px;
+    
+}
+@media (min-width: 1000px){
+    .function--container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+    }
+    .function{
+        height: 150px;
+    }
+    .restaurant__container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    }
+    
+    
 }
 .pink{
     background:  #efe2f2;
@@ -86,35 +84,21 @@ h2{
 .fa-store{
     color: $primary-color;
 }
-.restaurant{
-    height: auto;
-    background: #F2F2F2;
-    @include respond-to('medium') {
-        width: 90%;
-        justify-content: center;
-        margin-left: 5%;
-        border-radius: 20px;
-    }
+.restaurants{
+    width: 100%;
+    height: 1200px;
+    background-color: #F2F2F2;
+    margin-bottom: -20px;
+    padding-top: 40px;
+
 }
-.restaurant__container{
+.restaurant{
     background-size: cover;
     padding: 2rem;
     max-width: 100%;
     margin-top: 0px;
-    @include respond-to('large') {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
-    } 
-    @include respond-to('medium') {
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    }
-    @include respond-to('small'){
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    }
 }
-.restaurant__card{
+.card{
     background: white;
     box-shadow: 2px 2px 2px #F2F2F2;
     border-radius: 20px;
@@ -122,7 +106,7 @@ h2{
     height: 250px;
     position: relative;
 }
-.restaurant__card img{
+.card img{
     height: 150px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
@@ -130,7 +114,7 @@ h2{
     display: block;
 }
 
-.restaurant__card--new{
+.card__img--new{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -141,10 +125,10 @@ h2{
     padding: 10px;
     font-size: 12px;
 }
-.restaurant__card--text p{
+.card__text p{
     margin-top: -15px;
 }
-.restaurant__card--text{
+.card__text{
     padding-left: 20px;
 }
 
@@ -157,7 +141,7 @@ h2{
 a{
     text-decoration: none;
 }
-.restaurant__card--description{
+.card__description{
     position: absolute;
     object-fit: contain;
 }
