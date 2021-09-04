@@ -30,18 +30,20 @@
 
 .btn {
   border-radius: 50px;
-  width: 60%;
-  height: 60px;
-  font-size: 18px;
+  width: 40%;
+  height: 50px;
+  font-size: 14px;
   border: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: #FFFFFF;
+  margin-bottom: 30px;
 }
-@media (min-width: 800px) {
+@media (min-width: 680px) {
   .btn {
     justify-content: center;
-    width: 30%;
-    font-size: 14px;
+    width: 20%;
+    font-size: 16px;
+    margin: 30px;
   }
 }
 
@@ -56,18 +58,18 @@ footer a, footer h3 {
 footer ul {
   list-style: none;
 }
-@media (min-width: 1100px) {
+@media (min-width: 780px) {
   footer ul {
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 50px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 680px) {
   footer ul {
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 50px;
   }
 }
 footer h3 {
@@ -113,66 +115,58 @@ h2 {
 }
 
 .function {
-  height: 350px;
+  height: 300px;
 }
-@media (min-width: 1100px) {
+@media (min-width: 780px) {
   .function {
-    height: 150px;
+    height: 100px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 680px) {
   .function {
-    height: 150px;
+    height: 170px;
   }
 }
-@media (min-width: 1100px) {
-  .function__cnt {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-items: center;
-  }
-}
-@media (min-width: 800px) {
-  .function__cnt {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    justify-items: center;
-  }
-}
-
 .function__steps {
   display: flex;
-  position: relative;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 90%;
+  height: 60px;
   box-shadow: 2px 2px 2px 2px #E6E6E6;
   border-radius: 20px;
   background: #F2F2F2;
-  width: 90%;
-  height: 60px;
+  padding: 0px;
   margin: 20px;
-  padding: 5px 0px 0px 0px;
   font-size: 18px;
 }
-@media (min-width: 1100px) {
+@media (min-width: 780px) {
   .function__steps {
-    width: 70%;
-    height: 80px;
+    width: 30%;
+    height: 90px;
+    margin: 0px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 680px) {
   .function__steps {
+    height: 100px;
     width: 80%;
-    height: 70px;
   }
 }
-
-.pink {
+.function__steps i {
+  padding: 0px 20px 0px 20px;
+  color: gray;
+}
+.function__steps .fa-store {
+  color: #9356DC;
+}
+.function__steps.pink {
   background: #efe2f2;
 }
-
 .function__number {
-  position: absolute;
   background-color: #9356DC;
-  color: #FFFFFF;
+  color: white;
   font-size: 12px;
   width: 10px;
   height: 10px;
@@ -181,29 +175,33 @@ h2 {
   top: 20px;
   margin-left: -10px;
 }
-
-.function__icon {
-  margin: 40px;
-  color: gray;
+@media (min-width: 780px) {
+  .function__cnt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+  }
 }
-
-.fa-store {
-  color: #9356DC;
+@media (min-width: 680px) {
+  .function__cnt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    justify-items: center;
+  }
 }
 
 .restaurant {
   height: auto;
+  margin-bottom: -20px;
   background-color: #F2F2F2;
 }
 .restaurant h2 {
   padding: 30px 0px 0px 30px;
 }
-@media (min-width: 800px) {
+@media (min-width: 680px) {
   .restaurant {
-    width: 90%;
+    width: 100%;
     justify-content: center;
-    margin-left: 5%;
-    border-radius: 20px;
   }
 }
 
@@ -213,19 +211,19 @@ h2 {
   max-width: 100%;
   margin-top: 0px;
 }
-@media (min-width: 1100px) {
+@media (min-width: 780px) {
   .restaurant__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 680px) {
   .restaurant__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 580px) {
   .restaurant__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -246,7 +244,7 @@ h2 {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
-  display: block;
+  display: inline-block;
 }
 
 .restaurant__card--new {
@@ -258,22 +256,24 @@ h2 {
   height: 10px;
   width: 50px;
   padding: 10px;
-  font-size: 12px;
-}
-
-.restaurant__card--text p {
-  margin-top: -15px;
+  font-size: 14px;
 }
 
 .restaurant__card--text {
-  padding-left: 20px;
+  align-content: center;
+  align-items: center;
+  line-height: 0px;
+  padding-left: 5px;
+  color: black;
 }
 
 .fa-heart {
   float: right;
-  font-size: 25px;
-  padding: 30px;
+  font-size: 20px;
+  padding: 10px;
   text-transform: none;
+  font-weight: lighter;
+  color: black;
 }
 
 a {
@@ -291,6 +291,16 @@ a {
   object-fit: cover;
   position: relative;
 }
+@media (min-width: 780px) {
+  .page1 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+    padding: 0px;
+    margin: 10px 0px 20px 0px;
+  }
+}
 
 .fa-arrow-left {
   padding: 20px;
@@ -300,13 +310,20 @@ a {
   background-color: #F2F2F2;
   border-radius: 40px 40px 0px 0px;
   position: relative;
-  top: -60px;
-  height: 100%;
-  margin-bottom: -100px;
-  padding-bottom: 50px;
+  top: -40px;
+  height: auto;
+  margin-bottom: -60px;
+  padding-bottom: 0px;
   padding-left: 15px;
 }
-@media (min-width: 1100px) {
+@media (min-width: 780px) {
+  .container__page1 {
+    top: -30px;
+    border-radius: 0px;
+    margin-bottom: -50px;
+  }
+}
+@media (min-width: 780px) {
   .container__page1__anime {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
@@ -329,6 +346,17 @@ a {
 
 .page1 h3 {
   color: black;
+  font-size: 14px;
+}
+@media (min-width: 680px) {
+  .page1 h3 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 680px) and (min-width: 580px) {
+  .page1 h3 {
+    font-size: 14px;
+  }
 }
 
 .function__page1 {
@@ -346,11 +374,21 @@ a {
   margin: 0px;
   font-size: 18px;
 }
+@media (min-width: 680px) {
+  .function__page1 h3 {
+    font-size: 14px;
+  }
+}
 
 .function__page1 p {
   margin: 0px;
   padding: 0px 10px 0px 10px;
   font-size: 16px;
+}
+@media (min-width: 680px) {
+  .function__page1 p {
+    font-size: 14px;
+  }
 }
 
 .function__page1 .prix {

@@ -31,90 +31,90 @@ h2{
     margin-top: 30px;
 }
 .function{
-    height: 350px;
+    height: 300px;
+    @include respond-to('small');
     @include respond-to('large') {
-        height: 150px;
+        height: 100px;
     }
     @include respond-to('medium') {
-        height: 150px;
+        height: 170px;
+
+    }
+    
+    
+    &__steps{
+        display: flex;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        width: 90%;
+        height: 60px;
+        box-shadow: 2px 2px 2px 2px $bshadow-color;
+        border-radius: 20px;
+        background: $body-color;
+        padding: 0px;
+        margin: 20px;
+        font-size: 18px;
+        @include respond-to('small');
+        @include respond-to('large') {
+            width: 30%;
+            height: 90px;
+            margin: 0px;
+        }
+        @include respond-to('medium') {
+            height: 100px;
+            width: 80%;
+        }
+        
+        i {
+            padding: 0px 20px 0px 20px; 
+            color: gray;
+        }
+        .fa-store{
+            color: $primary-color;
+        }
+        &.pink {
+            background: #efe2f2;
+        }
+    }
+    &__number{
+        background-color: $primary-color;
+        color: white;
+        font-size: 12px;
+        width: 10px;
+        height: 10px;
+        padding: 10px;
+        border-radius: 50px;
+        top: 20px;
+        margin-left: -10px;
+        @include respond-to('small');
     }
     &__cnt{
         @include respond-to('large'){
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
             justify-items: center;
-    
+
         }
         @include respond-to('medium'){
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(80px, 1fr));
             justify-items: center;
         }
+    }
         
         
-    }
-}
-
-.function__steps{
-    display: flex;
-    position: relative;
-    box-shadow: 2px 2px 2px 2px $bshadow-color;
-    border-radius: 20px;
-    background: $body-color;
-    width: 90%;
-    height: 60px;
-    margin: 20px;
-    padding: 5px 0px 0px 0px;
-    font-size: 18px;  
-    @include respond-to('large') {
-        width: 70%;
-        height: 80px;
-
- 
-    }
-    @include respond-to('medium') {
-        width: 80%;
-        height: 70px;
-        -webkit-hyphens: none;
-        -moz-hyphens: none;
-        hyphens: none; 
-
-    }
-}
-.pink{
-    background:   #efe2f2;
-}
-.function__number{
-    position: absolute;
-    background-color: $primary-color;
-    color: $box-color;
-    font-size: 12px;
-    width: 10px;
-    height: 10px;
-    padding: 10px;
-    border-radius: 50px;
-    top: 20px;
-    margin-left: -10px;
-}
-.function__icon{
-    margin: 40px;
-    color: gray;
-}
-.fa-store{
-    color: $primary-color;
 }
 .restaurant{
     height: auto;
+    margin-bottom: -20px;
     background-color: $body-color;
     h2{
         padding: 30px 0px 0px 30px;
     }
-    
     @include respond-to('medium') {
-        width: 90%;
+        width: 100%;
         justify-content: center;
-        margin-left: 5%;
-        border-radius: 20px;
     }
 }
 .restaurant__container{
@@ -148,7 +148,7 @@ h2{
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    display: block;
+    display: inline-block;
 
 }
 
@@ -161,20 +161,25 @@ h2{
     height: 10px;
     width: 50px;
     padding: 10px;
-    font-size: 12px;
-}
-.restaurant__card--text p{
-    margin-top: -15px;
+    font-size: 14px;
 }
 .restaurant__card--text{
-    padding-left: 20px;
+    align-content: center;
+    align-items: center;
+    line-height: 0px;
+    padding-left: 5px;
+    color: black;
+    
 }
 
 .fa-heart{
     float: right;
-    font-size: 25px;
-    padding: 30px;
+    font-size: 20px;
+    padding: 10px;
     text-transform: none;
+    font-weight: lighter;
+    color: black;
+
 }
 a{
     text-decoration: none;

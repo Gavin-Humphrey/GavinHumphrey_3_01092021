@@ -3,6 +3,14 @@
     height: 300px;
     object-fit: cover;
     position: relative;
+    @include respond-to('large') {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        position: relative;
+        padding: 0px;
+        margin: 10px 0px 20px 0px;
+    }
 }
 .fa-arrow-left{
     padding: 20px;
@@ -11,15 +19,22 @@
     background-color: $body-color;
     border-radius: 40px 40px 0px 0px;
     position: relative;
-    top: -60px;
-    height: 100%;
-    margin-bottom: -100px; 
-    padding-bottom: 50px;
+    top: -40px;
+    height: auto;
+    margin-bottom: -60px; 
+    padding-bottom: 0px;
     padding-left: 15px;
-    &__anime{
+
+    @include respond-to('large') {
+        top: -30px;
+        border-radius: 0px;
+        margin-bottom: -50px;
+    }
+    &__anime {
         @include respond-to('large'){
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(30%, 1fr));
+
         }
     
     }
@@ -35,9 +50,7 @@
     padding: 0px;
     margin: 10px 30px 0px 0px;
 }
-.page1 h3{
-    color: black;
-}
+
 .function__page1{
     box-shadow: 2px 2px 2px 2px $bshadow-color;
     border-radius: 20px;
@@ -51,11 +64,17 @@
     padding: 10px 0px 5px 10px;
     margin: 0px;
     font-size: 18px;
+    @include respond-to('medium') {
+        font-size: 14px;
+    }
 }
 .function__page1 p{
     margin: 0px;
     padding: 0px 10px 0px 10px;
     font-size: 16px;
+    @include respond-to('medium') {
+        font-size: 14px;
+    }
 }
 .function__page1 .prix{
     float: right;

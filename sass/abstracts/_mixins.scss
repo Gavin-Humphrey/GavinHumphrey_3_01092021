@@ -1,27 +1,26 @@
 @mixin gradiant-btn {
     border-radius: 50px;
-    width: 60%;
-    height: 60px;
-    font-size: 18px;
+    width: 40%;
+    height: 50px;
+    font-size: 14px;
     border: none;
     background: linear-gradient(to top left, $primary-color, $secondary-color);
     color: $box-color;
+    margin-bottom: 30px;
     @include respond-to('medium'){
         justify-content: center;
-        width: 30%;
-        font-size: 14px;
+        width: 20%;
+        font-size: 16px;
+        margin: 30px;
     }
     
 }
 @mixin respond-to($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-      @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
         @content;
     }
+    
+
 }
-@else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
-  }
-}
+
     
