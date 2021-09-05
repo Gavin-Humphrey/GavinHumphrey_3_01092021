@@ -12,8 +12,8 @@
 
     </head>
     <body>
-        <div class="loader">
-            <div class="loader__food">
+        <div class="loader-wrapper">
+            <div class="loader">
                 <span>o</span>
                 <span>h</span>
                 <span>m</span>
@@ -24,11 +24,14 @@
                 <span>d</span>
             </div>
         </div>
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
+        <script>
+            $(window).on('load',function(){
+                $(".loader-wrapper").fadeOut(1000);
+                $(".loader-wrapper").fadeIn(1000);
+            });
+        </script>
+    
+
         <!--Header-->
         <header class="header-main">
             <img src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
@@ -71,7 +74,7 @@
                 <h2>Restaurants</h2>
                 <div class="restaurant__container">
                     <article class="restaurant__card">
-                        <a href="page/page1.html">      
+                        <a href="page1.html">      
                             <div class="restaurant__card__img">                             
                                 <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
                                 <span class="restaurant__card--new">Nouveau</span>
@@ -87,7 +90,7 @@
                     </article>
     
                     <article class="restaurant__card">
-                        <a href="page/page2.html">
+                        <a href="page2.html">
                             <div class="restaurant__card__img">                           
                                 <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la note enchantée">
                                 <span class="restaurant__card--new">Nouveau</span>
@@ -103,7 +106,7 @@
                     </article>
     
                     <article class="restaurant__card">
-                        <a href="page/page3.html">
+                        <a href="page3.html">
                             <div class="restaurant__card__img">
                                 <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="à la française">
                             </div>
@@ -118,7 +121,7 @@
                     </article>
     
                     <article class="restaurant__card">
-                        <a href="page/page4.html">
+                        <a href="page4.html">
                             <div class="restaurant__card__img">
                                 <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le délice des sens">
                             </div>

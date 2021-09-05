@@ -1,5 +1,6 @@
 html, body{
     max-width: 100%;
+    max-height: 100vh;
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
     margin: 0px;
@@ -188,3 +189,86 @@ a{
     position: absolute;
     object-fit: contain;
 }
+.loader-wrapper {
+
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $footer-background;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Shrikhand';
+    letter-spacing: 10px;
+
+    & > span {
+        font-size: 22px;
+        font-weight: 900px;
+        height: 0px;
+        width: 0px;
+        color: $primary-color;
+        animation: bounce 0.6s infinite alternate;
+        transform: translate3d(0);
+
+        &:nth-child(2) {
+            font-size: 22px;
+            font-weight: 900px;
+            color: $primary-color;
+            animation-delay: 0.2s;
+        }
+        &:nth-child(3) {
+            font-size: 22px;
+            font-weight: 900px;
+            color: $secondary-color;
+            animation-delay: 0.4s;
+        }
+        &:nth-child(4) {
+            font-size: 22px;
+            font-weight: 900px;
+            color: $secondary-color;
+            animation-delay: 0.6s;
+        }
+        &:nth-child(5) {
+            font-size: 22px;
+            font-weight: 900px;
+            color: $new-color;
+            animation-delay: 0.8s;
+        }
+        &:nth-child(6) {
+            font-size: 22px;
+            font-weight: 900px;
+            color: $new-color;
+            animation-delay: 1s;
+        }
+        &:nth-child(7) {
+            font-size: 22px;
+            font-weight: 900px;
+            color: $tetiary-color;
+            animation-delay: 1.2s;
+        }
+        &:nth-child(8) {
+            font-size: 22px;
+            font-weight: 900px;
+            color: $tetiary-color;
+            animation-delay: 1.4s;
+        }
+    }
+
+}
+@keyframes bounce {
+    to{
+        width: 18px;
+        height: 18px;
+        transform: translate3d(0, -14, 0);
+    }
+}
+.content{
+    display: none;
+}
+
