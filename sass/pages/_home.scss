@@ -18,6 +18,8 @@ html, body{
 h1{ 
     padding: 40px 20px 0px 20px;
     text-align: center;
+
+    
 }
 .description p{
     text-align: center;
@@ -33,11 +35,11 @@ h2{
 }
 .function{
     height: 300px;
-    @include respond-to('small');
-    @include respond-to('large') {
+    @include sm;
+    @include xl {
         height: 100px;
     }
-    @include respond-to('medium') {
+    @include md {
         height: 170px;
 
     }
@@ -56,13 +58,13 @@ h2{
         padding: 0px;
         margin: 20px;
         font-size: 18px;
-        @include respond-to('small');
-        @include respond-to('large') {
+        @include sm;
+        @include xl {
             width: 30%;
             height: 90px;
             margin: 0px;
         }
-        @include respond-to('medium') {
+        @include md {
             height: 100px;
             width: 80%;
         }
@@ -88,16 +90,16 @@ h2{
         border-radius: 50px;
         top: 20px;
         margin-left: -10px;
-        @include respond-to('small');
+        @include sm;
     }
     &__cnt{
-        @include respond-to('large'){
+        @include xl{
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
             justify-items: center;
 
         }
-        @include respond-to('medium'){
+        @include md {
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(80px, 1fr));
             justify-items: center;
@@ -113,7 +115,7 @@ h2{
     h2{
         padding: 30px 0px 0px 30px;
     }
-    @include respond-to('medium') {
+    @include md {
         width: 100%;
         justify-content: center;
     }
@@ -123,15 +125,15 @@ h2{
     padding: 2rem;
     max-width: 100%;
     margin-top: 0px;
-    @include respond-to('large') {
+    @include xl {
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(2, 1fr));
     } 
-    @include respond-to('medium') {
+    @include xl {
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(2, 1fr));
     }
-    @include respond-to('small'){
+    @include md{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     }
@@ -150,6 +152,7 @@ h2{
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     display: inline-block;
+    z-index: 1;
 
 }
 
@@ -163,6 +166,7 @@ h2{
     width: 50px;
     padding: 10px;
     font-size: 14px;
+    z-index: 2;
 }
 .restaurant__card--text{
     align-content: center;
@@ -189,71 +193,66 @@ a{
     position: absolute;
     object-fit: contain;
 }
-.loader-wrapper {
 
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $footer-background;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-}
 .loader{
+    width: 100vw;
+    background-color: $footer-background;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Shrikhand';
     letter-spacing: 10px;
 
+
     & > span {
-        font-size: 22px;
+        font-size: 30px;
         font-weight: 900px;
         height: 0px;
         width: 0px;
         color: $primary-color;
-        animation: bounce 0.6s infinite alternate;
+        animation: bounce 0.6s infinite ease-in-out alternate;
         transform: translate3d(0);
+       
 
         &:nth-child(2) {
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 900px;
             color: $primary-color;
             animation-delay: 0.2s;
         }
         &:nth-child(3) {
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 900px;
             color: $secondary-color;
             animation-delay: 0.4s;
         }
         &:nth-child(4) {
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 900px;
             color: $secondary-color;
             animation-delay: 0.6s;
         }
         &:nth-child(5) {
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 900px;
             color: $new-color;
             animation-delay: 0.8s;
         }
         &:nth-child(6) {
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 900px;
             color: $new-color;
             animation-delay: 1s;
         }
         &:nth-child(7) {
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 900px;
             color: $tetiary-color;
             animation-delay: 1.2s;
         }
         &:nth-child(8) {
-            font-size: 22px;
+            font-size: 30px;
             font-weight: 900px;
             color: $tetiary-color;
             animation-delay: 1.4s;
@@ -263,12 +262,8 @@ a{
 }
 @keyframes bounce {
     to{
-        width: 18px;
-        height: 18px;
+        width: 60px;
+        height: 60px;
         transform: translate3d(0, -14, 0);
     }
 }
-.content{
-    display: none;
-}
-

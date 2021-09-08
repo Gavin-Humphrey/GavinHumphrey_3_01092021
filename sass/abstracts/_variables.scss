@@ -7,9 +7,9 @@ $shaded-color: #D3D3D3;
 $box-color: #FFFFFF;
 $bshadow-color: #E6E6E6;
 $footer-background: #25221e;
-$breakpoints: (
-    'small': 580px,
-    'medium': 680px,
-    'large': 780px,
-    'xlarge': 1200px
-) 
+$btn-color: ($primary-color, $secondary-color);
+
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;

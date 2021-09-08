@@ -4,23 +4,50 @@
     height: 50px;
     font-size: 14px;
     border: none;
-    background: linear-gradient(to top left, $primary-color, $secondary-color);
+    background: linear-gradient(to top left, $btn-color);
     color: $box-color;
     margin-bottom: 30px;
-    @include respond-to('medium'){
-        justify-content: center;
-        width: 20%;
+    @include xl {
+        width: 10%;
         font-size: 16px;
-        margin: 30px;
     }
-    
-}
-@mixin respond-to($breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
-        @content;
+
+    @include md {
+        width: 10%;
+        font-size: 16px;
     }
+    @include sm {
+        width: 17%;
+    }
+
+ 
     
 
+    
 }
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
 
     

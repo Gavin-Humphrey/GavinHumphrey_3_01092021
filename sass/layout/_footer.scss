@@ -8,12 +8,22 @@ footer{
     }
     ul{
         list-style: none;
-        @include respond-to('large') {
+        @include xl {
             display: flex;
             justify-content: space-between;
             margin-right: 50px;
         }
-        @include respond-to('medium') {
+        @include md {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 50px;
+        }
+        @include lg {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 50px;
+        }
+        @include md {
             display: flex;
             justify-content: space-between;
             margin-right: 50px;
