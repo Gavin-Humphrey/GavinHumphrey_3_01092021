@@ -1,6 +1,20 @@
 .menu--logo{
-    padding: 0px;
-    margin: 0px;
+
+   @include xl {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding-bottom: 10px;
+   }
+   @include lg {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       padding-bottom: 10px;
+   }
+
 
 }
 .pageMenu img{
@@ -99,6 +113,7 @@
     position: relative;
     
    
+   
 }
 .card__desc{
     box-shadow: 2px 2px 2px 2px $bshadow-color;
@@ -110,12 +125,25 @@
     padding: 10px;
     text-align: left;
 
+    &:hover .fa-check-circle{
+        cursor: pointer;
+        transform: all 2s linear;
+        transform: rotate(-45deg);
+    }
+    &:hover > .circleAnime {
+        cursor: pointer;
+        visibility: visible;
+        
+    }
+    
+   
+    
     @include xl{
         width: 90%;
         height: 80px;
         h3{
             font-size: 18px;
-
+    
         }
         p{
             font-size: 16px;
@@ -126,22 +154,35 @@
         height: 80px;
         h3{
             font-size: 18px;
+            text-overflow: clip;
+    
         }
         p{
             font-size: 16px;
+            text-overflow: clip;
+            @include md {
+                font-size: 16px;
+            }
         }
         .prix{
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bolder;
+            text-overflow: clip;
+        
+            @include md {
+                font-size: 12px;
+            }
         }
     }
 
     h3, p{
         margin: 5px;
+       
 
     }
     .prix{
         float: right;
+      
     }
 } 
 .card__title{
@@ -156,9 +197,84 @@
     margin: 0px;
 }
 
-
 .fa-check-circle{
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    font-size: 25px;
     float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin: 0px;
+    transform: rotate(0);
+
 }
+.circleAnime {
+    float: right;
+    object-fit: cover;
+    height: inherit;
+    width: 70px;
+    color: white;
+    padding: 10px;
+    background: $tetiary-color;
+    border-radius: 0px 20px 20px 0px;
+    margin-top: -66px;
+    margin-right: -10px;
+    visibility: hidden;
+   
+   
+    @include lg {
+        margin-top: -65px;
+    }
+    
+    
+
+}
+
+.card {
+    &--entrees{
+    animation: card-load 1s ease-in-out;
+ 
+    
+    }
+    &--plats{
+    animation: card-load 2s ease-out;
+
+    
+    }
+    &--desserts{
+    animation: card-load 3s ease-in-out;
+
+   
+    }
+}
+
+@keyframes card-load {
+    0%{
+        transform: translateY(0%);
+    
+    
+    }
+    100%{
+        transform: translateY(-100%);
+
+    }
+}
+/*.circleAnime {
+    transform: translateX(40px);
+    animation: 2s ease-in;
+}
+
+@keyframes circleAnime {
+    0%{
+        transform: translateX(-10%);
+    
+    
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}*/
   
 

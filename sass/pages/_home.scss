@@ -194,7 +194,7 @@ a{
     object-fit: contain;
 }
 
-.loader{
+/*.loader{
     width: 100vw;
     background-color: $footer-background;
     opacity: 1;
@@ -203,6 +203,7 @@ a{
     align-items: center;
     font-family: 'Shrikhand';
     letter-spacing: 10px;
+   
 
 
     & > span {
@@ -213,6 +214,7 @@ a{
         color: $primary-color;
         animation: bounce 0.6s infinite ease-in-out alternate;
         transform: translate3d(0);
+    
        
 
         &:nth-child(2) {
@@ -267,3 +269,4 @@ a{
         transform: translate3d(0, -14, 0);
     }
 }
+*/

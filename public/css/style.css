@@ -311,78 +311,99 @@ a {
   object-fit: contain;
 }
 
-.loader {
-  width: 100vw;
-  background-color: #25221e;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Shrikhand";
-  letter-spacing: 10px;
-}
-.loader > span {
-  font-size: 30px;
-  font-weight: 900px;
-  height: 0px;
-  width: 0px;
-  color: #9356DC;
-  animation: bounce 0.6s infinite ease-in-out alternate;
-  transform: translate3d(0);
-}
-.loader > span:nth-child(2) {
-  font-size: 30px;
-  font-weight: 900px;
-  color: #9356DC;
-  animation-delay: 0.2s;
-}
-.loader > span:nth-child(3) {
-  font-size: 30px;
-  font-weight: 900px;
-  color: #FF79DA;
-  animation-delay: 0.4s;
-}
-.loader > span:nth-child(4) {
-  font-size: 30px;
-  font-weight: 900px;
-  color: #FF79DA;
-  animation-delay: 0.6s;
-}
-.loader > span:nth-child(5) {
-  font-size: 30px;
-  font-weight: 900px;
-  color: #3cb371;
-  animation-delay: 0.8s;
-}
-.loader > span:nth-child(6) {
-  font-size: 30px;
-  font-weight: 900px;
-  color: #3cb371;
-  animation-delay: 1s;
-}
-.loader > span:nth-child(7) {
-  font-size: 30px;
-  font-weight: 900px;
-  color: #99E2D0;
-  animation-delay: 1.2s;
-}
-.loader > span:nth-child(8) {
-  font-size: 30px;
-  font-weight: 900px;
-  color: #99E2D0;
-  animation-delay: 1.4s;
-}
+/*.loader{
+    width: 100vw;
+    background-color: $footer-background;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Shrikhand';
+    letter-spacing: 10px;
 
+
+
+    & > span {
+        font-size: 30px;
+        font-weight: 900px;
+        height: 0px;
+        width: 0px;
+        color: $primary-color;
+        animation: bounce 0.6s infinite ease-in-out alternate;
+        transform: translate3d(0);
+
+
+
+        &:nth-child(2) {
+            font-size: 30px;
+            font-weight: 900px;
+            color: $primary-color;
+            animation-delay: 0.2s;
+        }
+        &:nth-child(3) {
+            font-size: 30px;
+            font-weight: 900px;
+            color: $secondary-color;
+            animation-delay: 0.4s;
+        }
+        &:nth-child(4) {
+            font-size: 30px;
+            font-weight: 900px;
+            color: $secondary-color;
+            animation-delay: 0.6s;
+        }
+        &:nth-child(5) {
+            font-size: 30px;
+            font-weight: 900px;
+            color: $new-color;
+            animation-delay: 0.8s;
+        }
+        &:nth-child(6) {
+            font-size: 30px;
+            font-weight: 900px;
+            color: $new-color;
+            animation-delay: 1s;
+        }
+        &:nth-child(7) {
+            font-size: 30px;
+            font-weight: 900px;
+            color: $tetiary-color;
+            animation-delay: 1.2s;
+        }
+        &:nth-child(8) {
+            font-size: 30px;
+            font-weight: 900px;
+            color: $tetiary-color;
+            animation-delay: 1.4s;
+        }
+    }
+
+}
 @keyframes bounce {
-  to {
-    width: 60px;
-    height: 60px;
-    transform: translate3d(0, -14, 0);
+    to{
+        width: 60px;
+        height: 60px;
+        transform: translate3d(0, -14, 0);
+    }
+}
+*/
+@media (min-width: 1200px) {
+  .menu--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 10px;
   }
 }
-.menu--logo {
-  padding: 0px;
-  margin: 0px;
+@media (min-width: 992px) {
+  .menu--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 10px;
+  }
 }
 
 .pageMenu img {
@@ -496,6 +517,15 @@ a {
   padding: 10px;
   text-align: left;
 }
+.card__desc:hover .fa-check-circle {
+  cursor: pointer;
+  transform: all 2s linear;
+  transform: rotate(-45deg);
+}
+.card__desc:hover > .circleAnime {
+  cursor: pointer;
+  visibility: visible;
+}
 @media (min-width: 1200px) {
   .card__desc {
     width: 90%;
@@ -515,13 +545,28 @@ a {
   }
   .card__desc h3 {
     font-size: 18px;
+    text-overflow: clip;
   }
   .card__desc p {
     font-size: 16px;
+    text-overflow: clip;
   }
-  .card__desc .prix {
+}
+@media (min-width: 992px) and (min-width: 768px) {
+  .card__desc p {
     font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .card__desc .prix {
+    font-size: 14px;
     font-weight: bolder;
+    text-overflow: clip;
+  }
+}
+@media (min-width: 992px) and (min-width: 768px) {
+  .card__desc .prix {
+    font-size: 12px;
   }
 }
 .card__desc h3, .card__desc p {
@@ -546,7 +591,69 @@ a {
 }
 
 .fa-check-circle {
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  font-size: 25px;
   float: right;
+  padding-top: 20px;
+  padding-right: 20px;
+  margin: 0px;
+  transform: rotate(0);
 }
+
+.circleAnime {
+  float: right;
+  object-fit: cover;
+  height: inherit;
+  width: 70px;
+  color: white;
+  padding: 10px;
+  background: #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  margin-top: -66px;
+  margin-right: -10px;
+  visibility: hidden;
+}
+@media (min-width: 992px) {
+  .circleAnime {
+    margin-top: -65px;
+  }
+}
+
+.card--entrees {
+  animation: card-load 1s ease-in-out;
+}
+.card--plats {
+  animation: card-load 2s ease-out;
+}
+.card--desserts {
+  animation: card-load 3s ease-in-out;
+}
+
+@keyframes card-load {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+/*.circleAnime {
+    transform: translateX(40px);
+    animation: 2s ease-in;
+}
+
+@keyframes circleAnime {
+    0%{
+        transform: translateX(-10%);
+
+
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}*/
 
 /*# sourceMappingURL=style.css.map */
