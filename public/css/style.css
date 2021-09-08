@@ -311,82 +311,75 @@ a {
   object-fit: contain;
 }
 
-/*.loader{
-    width: 100vw;
-    background-color: $footer-background;
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Shrikhand';
-    letter-spacing: 10px;
-
-
-
-    & > span {
-        font-size: 30px;
-        font-weight: 900px;
-        height: 0px;
-        width: 0px;
-        color: $primary-color;
-        animation: bounce 0.6s infinite ease-in-out alternate;
-        transform: translate3d(0);
-
-
-
-        &:nth-child(2) {
-            font-size: 30px;
-            font-weight: 900px;
-            color: $primary-color;
-            animation-delay: 0.2s;
-        }
-        &:nth-child(3) {
-            font-size: 30px;
-            font-weight: 900px;
-            color: $secondary-color;
-            animation-delay: 0.4s;
-        }
-        &:nth-child(4) {
-            font-size: 30px;
-            font-weight: 900px;
-            color: $secondary-color;
-            animation-delay: 0.6s;
-        }
-        &:nth-child(5) {
-            font-size: 30px;
-            font-weight: 900px;
-            color: $new-color;
-            animation-delay: 0.8s;
-        }
-        &:nth-child(6) {
-            font-size: 30px;
-            font-weight: 900px;
-            color: $new-color;
-            animation-delay: 1s;
-        }
-        &:nth-child(7) {
-            font-size: 30px;
-            font-weight: 900px;
-            color: $tetiary-color;
-            animation-delay: 1.2s;
-        }
-        &:nth-child(8) {
-            font-size: 30px;
-            font-weight: 900px;
-            color: $tetiary-color;
-            animation-delay: 1.4s;
-        }
-    }
-
+.loader {
+  width: 100vw;
+  background-color: #25221e;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shrikhand";
+  letter-spacing: 10px;
 }
+.loader > span {
+  font-size: 30px;
+  font-weight: 900px;
+  height: 0px;
+  width: 0px;
+  color: #9356DC;
+  animation: bounce 0.6s infinite ease-in-out alternate;
+  transform: translate3d(0);
+}
+.loader > span:nth-child(2) {
+  font-size: 30px;
+  font-weight: 900px;
+  color: #9356DC;
+  animation-delay: 0.2s;
+}
+.loader > span:nth-child(3) {
+  font-size: 30px;
+  font-weight: 900px;
+  color: #FF79DA;
+  animation-delay: 0.4s;
+}
+.loader > span:nth-child(4) {
+  font-size: 30px;
+  font-weight: 900px;
+  color: #FF79DA;
+  animation-delay: 0.6s;
+}
+.loader > span:nth-child(5) {
+  font-size: 30px;
+  font-weight: 900px;
+  color: #3cb371;
+  animation-delay: 0.8s;
+}
+.loader > span:nth-child(6) {
+  font-size: 30px;
+  font-weight: 900px;
+  color: #3cb371;
+  animation-delay: 1s;
+}
+.loader > span:nth-child(7) {
+  font-size: 30px;
+  font-weight: 900px;
+  color: #99E2D0;
+  animation-delay: 1.2s;
+}
+.loader > span:nth-child(8) {
+  font-size: 30px;
+  font-weight: 900px;
+  color: #99E2D0;
+  animation-delay: 1.4s;
+}
+
 @keyframes bounce {
-    to{
-        width: 60px;
-        height: 60px;
-        transform: translate3d(0, -14, 0);
-    }
+  to {
+    width: 60px;
+    height: 60px;
+    transform: translate3d(0, -14, 0);
+  }
 }
-*/
 @media (min-width: 1200px) {
   .menu--logo {
     display: flex;
