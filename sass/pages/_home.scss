@@ -196,12 +196,16 @@ a{
     object-fit: contain;
 }
 .loader-wrapper{
+   position: absolute;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     justify-items: center;
     background-color: $footer-background;
+    animation: loader-alpha 3000ms;
+    animation-fill-mode: forwards;
+    overflow: hidden;
    
 
 }
@@ -212,6 +216,7 @@ a{
     align-items: center;
     font-family: 'Shrikhand';
     letter-spacing: 10px;
+    
    
 
 
@@ -270,6 +275,15 @@ a{
         }
     }
 
+}
+@keyframes loader-alpha {
+    0%, 99%{
+        transform: scaleY(1);
+        cursor: progress;
+    }
+    100% {
+        transform: scaleY(0);
+    }
 }
 @keyframes bounce {
     to{

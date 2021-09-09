@@ -1,4 +1,16 @@
+header{
+    display: flex;
+    padding: 20px;
+
+}
 .menu--logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+
+
 
    @include xl {
       display: flex;
@@ -46,10 +58,24 @@
 
 }
 
-.fa-arrow-left{
+.fa-arrow-left {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
     font-size: 25px;
     color: black;
-    padding: 40px 0px 0px 30px;
+
+    @include xl {
+        font-size: 25px;
+        color: black;
+        padding: 40px 0px 0px 30px;
+    }
+    @include lg {
+        font-size: 25px;
+        color: black;
+        padding: 40px 0px 0px 30px;
+    }
+    
 }
 .container__pageMenu{
     background-color: $body-color;
@@ -95,6 +121,7 @@
 
 } 
 .container__bg{
+  padding-left: 30px;
     @include xl{
         padding: 20px;
         display: grid;
@@ -110,22 +137,31 @@
    
 }
 
-.card {
+.card--entrees {
     background-color: $body-color;
     position: relative;
-   
-   
-   
+}
+.card__title {
+    font-size: 20px;
+    font-weight: normal;
+    color: gray;
+    border-bottom: 3px solid $tetiary-color;
+    width: 50px;
 }
 .card__desc{
-    box-shadow: 2px 2px 2px 2px $bshadow-color;
+    box-shadow: 2px 5px 2px 2px $bshadow-color;
     border-radius: 20px;
     background: $box-color;
-    width: 90%;
-    height: 70px;
+    width: 80%;
+    height: 60px;
     margin: 10px; 
     padding: 10px;
     text-align: left;
+    & h3, p{
+        margin: 5px;
+       
+
+    }
 
     &:hover .fa-check-circle{
         cursor: pointer;
@@ -138,8 +174,6 @@
         
     }
     
-   
-    
     @include xl{
         width: 90%;
         height: 80px;
@@ -163,40 +197,59 @@
             font-size: 16px;
             text-overflow: clip;
             @include md {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
         .prix{
-            font-size: 14px;
+            font-size: 16px;
             font-weight: bolder;
             text-overflow: clip;
         
             @include md {
-                font-size: 12px;
+                font-size: 14px;
             }
         }
     }
 
-    h3, p{
+    & h3, p{
         margin: 5px;
        
 
     }
-    .prix{
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    &.prix{
         float: right;
       
     }
 } 
-.card__title{
-    border-bottom: 3px solid $tetiary-color;
-    width: 60px;
+.prix {
+    float: right;
 }
-.container__title{
+.titleLine{
     display: flex;
     justify-content: space-between;
-    font-family: 'Shrikhand';font-size: 26px;;
-    padding: 30px;
-    margin: 0px;
+
+    
+   
+    & h1 {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Shrikhand';font-size: 24px;;
+        padding-left: 40px;
+  
+    }
+    & i{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 20px;
+        padding-right: 70px;
+    }
 }
 
 .fa-check-circle{
@@ -205,7 +258,7 @@
     height: inherit;
     font-size: 25px;
     float: right;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 20px;
     margin: 0px;
     transform: rotate(0);
@@ -220,13 +273,13 @@
     padding: 10px;
     background: $tetiary-color;
     border-radius: 0px 20px 20px 0px;
-    margin-top: -66px;
+    margin-top: -60px;
     margin-right: -10px;
     visibility: hidden;
    
    
     @include lg {
-        margin-top: -65px;
+        margin-top: -60px;
     }
     
     
@@ -249,6 +302,7 @@
     
    
     }
+    
 }
 
 @keyframes card-load {
