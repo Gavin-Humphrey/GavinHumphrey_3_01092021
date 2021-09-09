@@ -238,7 +238,7 @@
     
     }
     &--plats{
-    animation: card-load 2s ease-out;
+    animation: card-load 2s ease-in-out;
 
     
     }
@@ -251,16 +251,19 @@
 
 @keyframes card-load {
     0%{
-        transform: translateY(0%);
+        transform: translateY(100%);
+        opacity: 0;
     
-    
+    }
+    60%{
+        opacity: 0;
     }
     100%{
-        transform: translateY(-100%);
-
+        transform: translateY(0%);
+        opacity: 1;
     }
 }
-/*.circleAnime {
+.circleAnime {
     transform: translateX(40px);
     animation: 2s ease-in;
 }
@@ -275,6 +278,6 @@
         transform: translateX(0%);
         opacity: 0;
     }
-}*/
+}
   
 
