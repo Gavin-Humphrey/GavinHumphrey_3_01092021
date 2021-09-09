@@ -38,6 +38,11 @@
   color: #FFFFFF;
   margin-bottom: 30px;
 }
+.btn:hover {
+  transform: scale(1.15);
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  transition-delay: 150ms;
+}
 @media (min-width: 1200px) {
   .btn {
     width: 10%;
@@ -618,7 +623,7 @@ a {
   animation: card-load 1s ease-in-out;
 }
 .card--plats {
-  animation: card-load 2s ease-out;
+  animation: card-load 2s ease-in-out;
 }
 .card--desserts {
   animation: card-load 3s ease-in-out;
@@ -626,27 +631,30 @@ a {
 
 @keyframes card-load {
   0% {
-    transform: translateY(0%);
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
-/*.circleAnime {
-    transform: translateX(40px);
-    animation: 2s ease-in;
+.circleAnime {
+  transform: translateX(40px);
+  animation: 2s ease-in;
 }
 
 @keyframes circleAnime {
-    0%{
-        transform: translateX(-10%);
-
-
-    }
-    100%{
-        transform: translateX(0%);
-        opacity: 0;
-    }
-}*/
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
