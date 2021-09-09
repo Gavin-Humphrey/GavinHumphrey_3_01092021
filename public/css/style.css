@@ -652,20 +652,19 @@ a {
     opacity: 1;
   }
 }
-/*.circleAnime {
-    transform: translateX(40px);
-    animation: 2s ease-in;
-}*/
-/*@keyframes circleAnime {
-    0%{
-        transform: translateX(-10%);
+.circleAnime {
+  transform: translateX(40px);
+  animation: 2s ease-in;
+}
 
-
-    }
-    100%{
-        transform: translateX(0%);
-        opacity: 0;
-    }
-}*/
+@keyframes circleAnime {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

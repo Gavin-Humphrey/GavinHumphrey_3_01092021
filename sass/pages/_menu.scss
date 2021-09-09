@@ -265,12 +265,12 @@
         opacity: 1;
     }
 }
-/*.circleAnime {
+.circleAnime {
     transform: translateX(40px);
     animation: 2s ease-in;
-}*/
+}
 
-/*@keyframes circleAnime {
+@keyframes circleAnime {
     0%{
         transform: translateX(-10%);
     
@@ -280,6 +280,6 @@
         transform: translateX(0%);
         opacity: 0;
     }
-}*/
+}
   
 
