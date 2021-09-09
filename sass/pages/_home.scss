@@ -147,12 +147,12 @@ h2{
     position: relative;
 }
 .restaurant__card img{
-    height: 150px;
+    height: 160px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     display: inline-block;
-    z-index: 1;
+    z-index: 0;
 
 }
 
@@ -164,28 +164,30 @@ h2{
     background-color: $tetiary-color;
     height: 10px;
     width: 50px;
-    padding: 10px;
+    padding: 5px 10px 10px 5px;
     font-size: 14px;
-    z-index: 2;
+    z-index: 1;
 }
 .restaurant__card--text{
     align-content: center;
     align-items: center;
     line-height: 0px;
-    padding-left: 5px;
+    padding: 15px 0px 10px 10px;
     color: black;
     
 }
 
 .fa-heart{
     float: right;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 25px;
+    padding: 40px 10px 0px 0px;
     text-transform: none;
     font-weight: lighter;
     color: black;
-
+    cursor: pointer;
+    fill: $primary-color;
 }
+
 a{
     text-decoration: none;
 }
@@ -193,11 +195,18 @@ a{
     position: absolute;
     object-fit: contain;
 }
-
-.loader{
+.loader-wrapper{
     width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     background-color: $footer-background;
-    opacity: 1;
+   
+
+}
+.loader{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,3 +278,4 @@ a{
         transform: translate3d(0, -14, 0);
     }
 }
+

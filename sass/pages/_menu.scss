@@ -47,7 +47,9 @@
 }
 
 .fa-arrow-left{
-    padding: 20px;
+    font-size: 25px;
+    color: black;
+    padding: 40px 0px 0px 30px;
 }
 .container__pageMenu{
     background-color: $body-color;
@@ -111,7 +113,7 @@
 .card {
     background-color: $body-color;
     position: relative;
-    
+   
    
    
 }
@@ -234,17 +236,17 @@
 .card {
     &--entrees{
     animation: card-load 1s ease-in-out;
- 
+   
     
     }
     &--plats{
     animation: card-load 2s ease-in-out;
-
+ 
     
     }
     &--desserts{
     animation: card-load 3s ease-in-out;
-
+    
    
     }
 }
@@ -263,12 +265,12 @@
         opacity: 1;
     }
 }
-.circleAnime {
+/*.circleAnime {
     transform: translateX(40px);
     animation: 2s ease-in;
-}
+}*/
 
-@keyframes circleAnime {
+/*@keyframes circleAnime {
     0%{
         transform: translateX(-10%);
     
@@ -278,6 +280,6 @@
         transform: translateX(0%);
         opacity: 0;
     }
-}
+}*/
   
 
