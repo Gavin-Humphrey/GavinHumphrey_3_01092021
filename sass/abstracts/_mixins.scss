@@ -1,6 +1,6 @@
 @mixin gradiant-btn {
     border-radius: 50px;
-    width: 45%;
+    max-width: 50%;
     height: 50px;
     font-size: 14px;
     border: none;
@@ -8,23 +8,7 @@
     color: $box-color;
     margin-bottom: 30px;
 
-    @include xl {
-        width: 10%;
-        font-size: 16px;
-    }
-    @include lg {
-        width: 10%;
-        font-size: 16px;
-    }
-    @include md {
-        width: 20%;
-        font-size: 14px;
-    }
-    @include sm {
-        width: 20%;
-        font-size: 14px;
-    }
-
+   
 
     &:hover{
         transform: scale(1.15);

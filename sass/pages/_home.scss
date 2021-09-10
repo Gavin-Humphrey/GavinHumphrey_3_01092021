@@ -8,7 +8,6 @@ html, body{
     align-items: center;
     justify-content: center;
 } 
-
 .description{
     background: $body-color;
     height: 300px;
@@ -18,8 +17,7 @@ html, body{
 h1{ 
     padding: 40px 20px 0px 20px;
     text-align: center;
-
-    
+ 
 }
 .description p{
     text-align: center;
@@ -152,7 +150,7 @@ h2{
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     display: inline-block;
-    z-index: 0;
+    z-index: -1;
 
 }
 
@@ -186,9 +184,17 @@ h2{
     color: black;
     cursor: pointer;
     fill: $primary-color;
+    &:active {
+        font-weight: 900;
+        background: linear-gradient(to bottom, $secondary-color, $primary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animheart 200ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
 }
 
-a{
+a {
     text-decoration: none;
 }
 .restaurant__card--description{
@@ -206,6 +212,7 @@ a{
     animation: loader-alpha 3000ms;
     animation-fill-mode: forwards;
     overflow: hidden;
+    z-index: 2;
    
 
 }
@@ -290,6 +297,14 @@ a{
         width: 60px;
         height: 60px;
         transform: translate3d(0, -14, 0);
+    }
+}
+@keyframes animheart {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
     }
 }
 

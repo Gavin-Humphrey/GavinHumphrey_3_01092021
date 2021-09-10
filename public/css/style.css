@@ -7,8 +7,56 @@
   margin: 0px;
   border-bottom: 2px solid #D3D3D3;
 }
+@media (min-width: 1200px) {
+  .header-main {
+    height: 40px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .header-main {
+    height: 40px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .header-main {
+    height: 40px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 576px) {
+  .header-main {
+    height: 50px;
+    padding-top: 10px;
+  }
+}
 .header-main img {
-  width: 50%;
+  width: 40%;
+}
+@media (min-width: 1200px) {
+  .header-main img {
+    width: 15%;
+    height: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .header-main img {
+    width: 25%;
+    height: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .header-main img {
+    width: 25%;
+    height: 40px;
+  }
+}
+@media (min-width: 576px) {
+  .header-main img {
+    width: 25%;
+    height: 40px;
+  }
 }
 
 .maps {
@@ -30,37 +78,13 @@
 
 .btn {
   border-radius: 50px;
-  width: 45%;
+  max-width: 50%;
   height: 50px;
   font-size: 14px;
   border: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: #FFFFFF;
   margin-bottom: 30px;
-}
-@media (min-width: 1200px) {
-  .btn {
-    width: 10%;
-    font-size: 16px;
-  }
-}
-@media (min-width: 992px) {
-  .btn {
-    width: 10%;
-    font-size: 16px;
-  }
-}
-@media (min-width: 768px) {
-  .btn {
-    width: 20%;
-    font-size: 14px;
-  }
-}
-@media (min-width: 576px) {
-  .btn {
-    width: 20%;
-    font-size: 14px;
-  }
 }
 .btn:hover {
   transform: scale(1.15);
@@ -281,7 +305,7 @@ h2 {
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
   display: inline-block;
-  z-index: 0;
+  z-index: -1;
 }
 
 .restaurant__card--new {
@@ -315,6 +339,14 @@ h2 {
   cursor: pointer;
   fill: #9356DC;
 }
+.fa-heart:active {
+  font-weight: 900;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animheart 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
 
 a {
   text-decoration: none;
@@ -336,6 +368,7 @@ a {
   animation: loader-alpha 3000ms;
   animation-fill-mode: forwards;
   overflow: hidden;
+  z-index: 2;
 }
 
 .loader {
@@ -413,19 +446,26 @@ a {
     transform: translate3d(0, -14, 0);
   }
 }
-header {
+@keyframes animheart {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.menu-head {
   display: flex;
   padding: 20px;
 }
-
-.menu--logo {
+.menu-head__logo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 @media (min-width: 1200px) {
-  .menu--logo {
+  .menu-head {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -434,7 +474,7 @@ header {
   }
 }
 @media (min-width: 992px) {
-  .menu--logo {
+  .menu-head {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -582,18 +622,25 @@ header {
   margin: 10px;
   padding: 10px;
   text-align: left;
+  position: relative;
+  overflow: hidden;
 }
 .card__desc h3, .card__desc p {
   margin: 5px;
 }
+.card__desc:hover .prix {
+  padding-right: 70px;
+}
 .card__desc:hover .fa-check-circle {
-  cursor: pointer;
-  transform: all 2s linear;
-  transform: rotate(-45deg);
+  color: white;
+  font-size: 30px;
+  line-height: 70px;
+  animation: animation-menu 500ms;
+  animation-iteration-count: 1;
 }
 .card__desc:hover > .circleAnime {
   cursor: pointer;
-  visibility: visible;
+  transform: translateX(0%);
 }
 @media (min-width: 1200px) {
   .card__desc {
@@ -683,26 +730,22 @@ header {
   padding-top: 10px;
   padding-right: 20px;
   margin: 0px;
-  transform: rotate(0);
+  color: white;
+  font-size: 30px;
+  line-height: 70px;
 }
 
 .circleAnime {
-  float: right;
-  object-fit: cover;
-  height: inherit;
+  position: absolute;
+  right: 0px;
+  top: 0px;
   width: 70px;
-  color: white;
-  padding: 10px;
-  background: #99E2D0;
-  border-radius: 0px 20px 20px 0px;
-  margin-top: -60px;
-  margin-right: -10px;
-  visibility: hidden;
-}
-@media (min-width: 992px) {
-  .circleAnime {
-    margin-top: -60px;
-  }
+  height: 100%;
+  text-align: center;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  transform: translateX(100%);
+  transition: transform 300ms;
 }
 
 .card--entrees {
@@ -728,10 +771,6 @@ header {
     opacity: 1;
   }
 }
-/*.circleAnime {
-    transform: translateX(40px);
-    animation: 2s ease-in;
-}*/
 @keyframes circleAnime {
   0% {
     transform: translateX(-10%);
@@ -739,6 +778,14 @@ header {
   100% {
     transform: translateX(0%);
     opacity: 0;
+  }
+}
+@keyframes animation-menu {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
   }
 }
 
