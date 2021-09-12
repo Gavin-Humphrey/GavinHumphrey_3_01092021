@@ -12,9 +12,10 @@
     
     
     &:hover{
-        transform: scale(1.15);
+        transform: scale(1.0);
         background: linear-gradient(to bottom right, $btn-color);
-        transition-delay: 150ms; 
+        transition-delay: 150ms;
+        box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 14px 40px 0 rgba(0, 0, 0, 0.19);
     }      
 }
 
@@ -28,13 +29,13 @@
     background: linear-gradient(to top left, $btn-color);
     color: $box-color;
     margin-bottom: 50px;
-   
-   
     
+     
     &:hover{
-        transform: scale(1.15);
+        transform: scale(1.0);
         background: linear-gradient(to bottom right, $btn-color);
         transition-delay: 150ms; 
+        box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 14px 40px 0 rgba(0, 0, 0, 0.19);
     }      
 }
 

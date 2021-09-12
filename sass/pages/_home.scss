@@ -185,6 +185,7 @@ h2{
     color: black;
     cursor: pointer;
 
+
       
     &:hover {
         font-weight: 900;
@@ -193,6 +194,7 @@ h2{
         -webkit-text-fill-color: transparent;
         animation: animheart 200ms ease-in-out;
         animation-fill-mode: forwards;
+        transform-origin: bottom;
     }
 }
 
@@ -315,8 +317,14 @@ a {
     0% {
         transform: scaleY(1);
     }
+
     100% {
         transform: scaleY(0);
     }
+    
 }*/
+
+
+
+
 
