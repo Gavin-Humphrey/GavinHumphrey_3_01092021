@@ -189,7 +189,7 @@ h2{
       
     &:hover {
         font-weight: 900;
-        background: linear-gradient(to bottom, $secondary-color, $primary-color);
+        /*background: linear-gradient(to bottom, $secondary-color, $primary-color);*/
         background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: animheart 200ms ease-in-out;

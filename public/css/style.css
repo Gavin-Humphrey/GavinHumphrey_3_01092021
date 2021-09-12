@@ -364,7 +364,7 @@ h2 {
 }
 .fa-heart:hover {
   font-weight: 900;
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  /*background: linear-gradient(to bottom, $secondary-color, $primary-color);*/
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animheart 200ms ease-in-out;
