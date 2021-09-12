@@ -1,3 +1,7 @@
 .btn{
     @include gradiant-btn;
 }
+
+.btnMenu{
+    @include gradiant-btnMenu;
+}

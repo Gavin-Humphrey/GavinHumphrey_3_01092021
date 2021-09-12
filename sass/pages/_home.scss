@@ -15,8 +15,9 @@ html, body{
     margin-top: -22px;
 }
 h1{ 
-    padding: 40px 20px 0px 20px;
+    padding: 40px 70px 0px 70px;
     text-align: center;
+    font-size: 24px;
  
 }
 .description p{
@@ -183,16 +184,26 @@ h2{
     font-weight: lighter;
     color: black;
     cursor: pointer;
-    fill: $primary-color;
-    &:active {
+
+      
+    &:hover {
         font-weight: 900;
         background: linear-gradient(to bottom, $secondary-color, $primary-color);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: animheart 200ms ease-in-out;
         animation-fill-mode: forwards;
     }
 }
+
+/*&:active {
+    font-weight: 900;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animheart 200ms ease-in-out;
+    animation-fill-mode: forwards;
+}*/
 
 a {
     text-decoration: none;
@@ -299,12 +310,13 @@ a {
         transform: translate3d(0, -14, 0);
     }
 }
-@keyframes animheart {
+
+/*@keyframes animheart {
     0% {
-        transform: scaleY(0);
-    }
-    100% {
         transform: scaleY(1);
     }
-}
+    100% {
+        transform: scaleY(0);
+    }
+}*/
 

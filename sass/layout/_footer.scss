@@ -6,6 +6,11 @@ footer{
     a, h3 {
         color: $box-color;
     }
+    a{
+        &:hover{
+            color: $tetiary-color;
+        }
+    }
     ul{
         list-style: none;
         @include xl {

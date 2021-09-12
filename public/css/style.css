@@ -78,15 +78,33 @@
 
 .btn {
   border-radius: 50px;
-  max-width: 50%;
+  max-width: 350px;
   height: 50px;
-  font-size: 14px;
+  padding: 0px 20px 0px 20px;
+  font-size: 16px;
   border: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: #FFFFFF;
   margin-bottom: 30px;
 }
 .btn:hover {
+  transform: scale(1.15);
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  transition-delay: 150ms;
+}
+
+.btnMenu {
+  border-radius: 50px;
+  max-width: 450px;
+  height: 50px;
+  padding: 0px 60px 0px 60px;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+.btnMenu:hover {
   transform: scale(1.15);
   background: linear-gradient(to bottom right, #9356DC, #FF79DA);
   transition-delay: 150ms;
@@ -99,6 +117,9 @@ footer {
 }
 footer a, footer h3 {
   color: #FFFFFF;
+}
+footer a:hover {
+  color: #99E2D0;
 }
 footer ul {
   list-style: none;
@@ -155,8 +176,9 @@ html, body {
 }
 
 h1 {
-  padding: 40px 20px 0px 20px;
+  padding: 40px 70px 0px 70px;
   text-align: center;
+  font-size: 24px;
 }
 
 .description p {
@@ -337,17 +359,24 @@ h2 {
   font-weight: lighter;
   color: black;
   cursor: pointer;
-  fill: #9356DC;
 }
-.fa-heart:active {
+.fa-heart:hover {
   font-weight: 900;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animheart 200ms ease-in-out;
   animation-fill-mode: forwards;
 }
 
+/*&:active {
+    font-weight: 900;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animheart 200ms ease-in-out;
+    animation-fill-mode: forwards;
+}*/
 a {
   text-decoration: none;
 }
@@ -446,14 +475,14 @@ a {
     transform: translate3d(0, -14, 0);
   }
 }
-@keyframes animheart {
-  0% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
+/*@keyframes animheart {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}*/
 .menu-head {
   display: flex;
   padding: 20px;
@@ -606,9 +635,8 @@ a {
 }
 
 .card__title {
-  font-size: 20px;
-  font-weight: normal;
-  color: gray;
+  font-size: 18px;
+  font-weight: lighter;
   border-bottom: 3px solid #99E2D0;
   width: 50px;
 }
@@ -700,6 +728,7 @@ a {
 
 .prix {
   float: right;
+  font-weight: bolder;
 }
 
 .titleLine {
@@ -710,8 +739,8 @@ a {
   display: flex;
   justify-content: space-between;
   font-family: "Shrikhand";
-  font-size: 24px;
-  padding-left: 40px;
+  font-size: 20px;
+  padding-left: 50px;
 }
 .titleLine i {
   display: flex;
@@ -727,12 +756,22 @@ a {
   height: inherit;
   font-size: 25px;
   float: right;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-right: 20px;
   margin: 0px;
   color: white;
   font-size: 30px;
   line-height: 70px;
+}
+@media (min-width: 1200px) {
+  .fa-check-circle {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .fa-check-circle {
+    padding-top: 10px;
+  }
 }
 
 .circleAnime {
@@ -756,6 +795,13 @@ a {
 }
 .card--desserts {
   animation: card-load 3s ease-in-out;
+}
+
+.btnMenu-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 @keyframes card-load {
@@ -785,7 +831,7 @@ a {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(720deg);
+    transform: rotate(-720deg);
   }
 }
 
