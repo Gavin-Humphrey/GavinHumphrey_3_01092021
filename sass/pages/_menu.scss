@@ -143,26 +143,49 @@
 }
 .card__desc{
     box-shadow: 2px 5px 2px 2px $bshadow-color;
-    border-radius: 20px;
+    border-radius: 15px;
     background: $box-color;
     width: 90%;
-    height: 50px;
+    height: 40px;
     margin: 10px; 
-    padding: 10px;
+    padding: 15px;
     text-align: left;
     position: relative;
     overflow: hidden;
 
-    & h3, p{
-        margin: 5px;
+    &:hover h3 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 30px;
+    }
+    &:hover p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 30px;
+    }
+
+    & h3{
+        margin: 0px;
+        
+        @include xl {
+            margin-top: 10px;
+        }
+        @include lg {
+            margin-top: 10px;
+        }
+    }
+    & p {
+        margin: 0px;
+        font-weight: lighter; 
     }
     &:hover .prix {
         padding-right: 70px;
     }
     &:hover .fa-check-circle{
         color: white;
-        font-size: 30px;
-        line-height: 70px;
+
         animation: animation-menu 500ms;
         animation-iteration-count: 1;
     }
@@ -176,101 +199,86 @@
     @include xl{
         width: 90%;
         height: 80px;
-        h3{
-            font-size: 18px;
-    
-        }
-        p{
-            font-size: 16px;
-        }
     }
+
     @include lg {
         width: 90%;
-        height: 80px;
-        h3{
-            font-size: 18px;
-            text-overflow: clip;
-    
-        }
-        p{
-            font-size: 16px;
-            text-overflow: clip;
-            @include md {
-                font-size: 14px;
-            }
-        }
-        .prix{
-            font-size: 16px;
-            font-weight: bolder;
-            text-overflow: clip;
-        
-        
-            @include md {
-                font-size: 14px;
-            }
-        }
+        height: 80px; 
     }
 
-    & h3, p{
-        margin: 5px;
-       
-
-    }
-    h3 {
-        font-size: 16px;
-    }
-    p {
-        font-size: 14px;
-    }
-    &.prix{
-        float: right;
-      
-    }
-} 
-.prix {
-    float: right;
-    font-weight: bolder;
-}
-.titleLine{
-    display: flex;
-    justify-content: space-between;
-
-    
-   
-    & h1 {
+    & .prix1{
         display: flex;
         justify-content: space-between;
-        font-family: 'Shrikhand';font-size: 20px;;
-        padding-left: 50px;
-  
+
+        @include xl {
+            margin-top: 10px;
+        }
+        @include lg {
+            margin-top: 5px;
+        }
+       
+      
     }
-    & i{
+
+    & .prix {
+        font-weight: bolder;
+    }
+}   
+.titleLine {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 0px;
+    margin: 0px;
+
+    &__heart{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding-bottom: 20px;
-        padding-right: 70px;
+        font-weight: lighter;
+        text-transform: none;
+        font-size: 25px;
+        padding-bottom: 30px;
+        padding-right: 45px;
+        cursor: pointer;
+        color: black;
+
+        &:hover {
+            font-weight: 900;
+            background: linear-gradient(to top, $secondary-color, $primary-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animheart 2s forwards;
+        }
+    }
+
+    & h1 {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Shrikhand';
+        font-size: 25px;
+        padding-left: 25px;
     }
 }
-
 .fa-check-circle{
     justify-content: center;
     align-items: center;
-    font-size: 10px;
     float: right;
-    padding-top: 0px;
-    padding-right: 20px;
-    margin: 0px;
+    font-size: 20px;
+    /*margin-top: 0px;*/
+    /*padding-top: 0px;*/
+    margin-right: 25px;
     color: white;
     line-height: 70px;
+    transition: transform 100ms;
+
     @include xl {
-        padding-top: 10px;
+        margin-top: 15px;
     }
     @include lg {
-        padding-top: 10px;
+        margin-top: 15px;
     }
-
-
 
 }
 .circleAnime{
@@ -280,10 +288,10 @@
     width: 70px;
     height: 100%;
     text-align: center;
-    background-color: #99E2D0;
+    background-color: $tetiary-color;
     border-radius: 0px 15px 15px 0px;
     transform: translateX(100%);
-    transition: transform 300ms;    
+    transition: transform 500ms;    
 
 }
 .card {
@@ -325,7 +333,7 @@
 
 @keyframes circleAnime {
     0%{
-        transform: translateX(-10%);
+        transform: translateX(-100%);
     
     
     }
@@ -336,14 +344,19 @@
 }
 @keyframes animation-menu {
     0% {
-        transform: rotate(-760deg);
+        transform: rotate(760deg);
     }
-    50% {
-        transform: rotate(0deg);
-    }
+   
     100% {
         transform: rotate(0deg);
     }
 }
+@keyframes animheart { 
+    from {
+        background-position-y: 32px; 
+    } 
+    to { 
+        background-position-y: -32px;
+    }
+}
   
-

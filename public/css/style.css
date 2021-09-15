@@ -356,20 +356,27 @@ h2 {
 .fa-heart {
   float: right;
   font-size: 25px;
-  padding: 40px 10px 0px 0px;
+  padding: 40px 15px 0px 0px;
   text-transform: none;
   font-weight: lighter;
   color: black;
   cursor: pointer;
+  /*&:hover {
+      font-weight: bold; 
+      background: linear-gradient($primary-color, $secondary-color); 
+      -webkit-background-clip: text; 
+      background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      animation: animheart 3s forwards;
+  }*/
 }
 .fa-heart:hover {
   font-weight: 900;
-  /*background: linear-gradient(to bottom, $secondary-color, $primary-color);*/
+  background: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animheart 200ms ease-in-out;
-  animation-fill-mode: forwards;
-  transform-origin: bottom;
+  animation: animheart 2s forwards;
 }
 
 /*&:active {
@@ -478,11 +485,18 @@ a {
     transform: translate3d(0, -14, 0);
   }
 }
+@keyframes animheart {
+  from {
+    background-position-y: 32px;
+  }
+  to {
+    background-position-y: -32px;
+  }
+}
 /*@keyframes animheart {
     0% {
         transform: scaleY(1);
     }
-
     100% {
         transform: scaleY(0);
     }
@@ -652,26 +666,50 @@ a {
 
 .card__desc {
   box-shadow: 2px 5px 2px 2px #E6E6E6;
-  border-radius: 20px;
+  border-radius: 15px;
   background: #FFFFFF;
   width: 90%;
-  height: 50px;
+  height: 40px;
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   text-align: left;
   position: relative;
   overflow: hidden;
 }
-.card__desc h3, .card__desc p {
-  margin: 5px;
+.card__desc:hover h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+.card__desc:hover p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+.card__desc h3 {
+  margin: 0px;
+}
+@media (min-width: 1200px) {
+  .card__desc h3 {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .card__desc h3 {
+    margin-top: 10px;
+  }
+}
+.card__desc p {
+  margin: 0px;
+  font-weight: lighter;
 }
 .card__desc:hover .prix {
   padding-right: 70px;
 }
 .card__desc:hover .fa-check-circle {
   color: white;
-  font-size: 30px;
-  line-height: 70px;
   animation: animation-menu 500ms;
   animation-iteration-count: 1;
 }
@@ -684,100 +722,86 @@ a {
     width: 90%;
     height: 80px;
   }
-  .card__desc h3 {
-    font-size: 18px;
-  }
-  .card__desc p {
-    font-size: 16px;
-  }
 }
 @media (min-width: 992px) {
   .card__desc {
     width: 90%;
     height: 80px;
   }
-  .card__desc h3 {
-    font-size: 18px;
-    text-overflow: clip;
-  }
-  .card__desc p {
-    font-size: 16px;
-    text-overflow: clip;
-  }
 }
-@media (min-width: 992px) and (min-width: 768px) {
-  .card__desc p {
-    font-size: 14px;
+.card__desc .prix1 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  .card__desc .prix1 {
+    margin-top: 10px;
   }
 }
 @media (min-width: 992px) {
-  .card__desc .prix {
-    font-size: 16px;
-    font-weight: bolder;
-    text-overflow: clip;
+  .card__desc .prix1 {
+    margin-top: 5px;
   }
 }
-@media (min-width: 992px) and (min-width: 768px) {
-  .card__desc .prix {
-    font-size: 14px;
-  }
-}
-.card__desc h3, .card__desc p {
-  margin: 5px;
-}
-.card__desc h3 {
-  font-size: 16px;
-}
-.card__desc p {
-  font-size: 14px;
-}
-.card__desc.prix {
-  float: right;
-}
-
-.prix {
-  float: right;
+.card__desc .prix {
   font-weight: bolder;
 }
 
 .titleLine {
   display: flex;
   justify-content: space-between;
+  justify-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+.titleLine__heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: lighter;
+  text-transform: none;
+  font-size: 25px;
+  padding-bottom: 30px;
+  padding-right: 45px;
+  cursor: pointer;
+  color: black;
+}
+.titleLine__heart:hover {
+  font-weight: 900;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animheart 2s forwards;
 }
 .titleLine h1 {
   display: flex;
   justify-content: space-between;
   font-family: "Shrikhand";
-  font-size: 20px;
-  padding-left: 50px;
-}
-.titleLine i {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 20px;
-  padding-right: 70px;
+  font-size: 25px;
+  padding-left: 25px;
 }
 
 .fa-check-circle {
   justify-content: center;
   align-items: center;
-  font-size: 10px;
   float: right;
-  padding-top: 0px;
-  padding-right: 20px;
-  margin: 0px;
+  font-size: 20px;
+  /*margin-top: 0px;*/
+  /*padding-top: 0px;*/
+  margin-right: 25px;
   color: white;
   line-height: 70px;
+  transition: transform 100ms;
 }
 @media (min-width: 1200px) {
   .fa-check-circle {
-    padding-top: 10px;
+    margin-top: 15px;
   }
 }
 @media (min-width: 992px) {
   .fa-check-circle {
-    padding-top: 10px;
+    margin-top: 15px;
   }
 }
 
@@ -791,7 +815,7 @@ a {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   transform: translateX(100%);
-  transition: transform 300ms;
+  transition: transform 500ms;
 }
 
 .card--entrees {
@@ -829,7 +853,7 @@ a {
 }
 @keyframes circleAnime {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0%);
@@ -838,13 +862,18 @@ a {
 }
 @keyframes animation-menu {
   0% {
-    transform: rotate(-760deg);
-  }
-  50% {
-    transform: rotate(0deg);
+    transform: rotate(760deg);
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes animheart {
+  from {
+    background-position-y: 32px;
+  }
+  to {
+    background-position-y: -32px;
   }
 }
 

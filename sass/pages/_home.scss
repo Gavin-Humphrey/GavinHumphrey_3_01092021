@@ -179,22 +179,31 @@ h2{
 .fa-heart{
     float: right;
     font-size: 25px;
-    padding: 40px 10px 0px 0px;
+    padding: 40px 15px 0px 0px;
     text-transform: none;
     font-weight: lighter;
     color: black;
     cursor: pointer;
 
 
+
+    /*&:hover {
+        font-weight: bold; 
+        background: linear-gradient($primary-color, $secondary-color); 
+        -webkit-background-clip: text; 
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: animheart 3s forwards;
+    }*/
       
     &:hover {
         font-weight: 900;
-        /*background: linear-gradient(to bottom, $secondary-color, $primary-color);*/
+        background: linear-gradient(to top, $secondary-color, $primary-color);
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: animheart 200ms ease-in-out;
-        animation-fill-mode: forwards;
-        transform-origin: bottom;
+        animation: animheart 2s forwards;
+   
     }
 }
 
@@ -312,19 +321,21 @@ a {
         transform: translate3d(0, -14, 0);
     }
 }
+@keyframes animheart { 
+    from {
+        background-position-y: 32px; 
+    } 
+    to { 
+        background-position-y: -32px;
+    }
+}
 
 /*@keyframes animheart {
     0% {
         transform: scaleY(1);
     }
-
     100% {
         transform: scaleY(0);
     }
     
 }*/
-
-
-
-
-
