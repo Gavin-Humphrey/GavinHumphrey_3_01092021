@@ -240,7 +240,7 @@ h2 {
 }
 .function__steps i {
   padding: 0px 20px 0px 20px;
-  color: gray;
+  color: #808080;
 }
 .function__steps .fa-store {
   color: #9356DC;
@@ -250,7 +250,7 @@ h2 {
 }
 .function__number {
   background-color: #9356DC;
-  color: white;
+  color: #FFFFFF;
   font-size: 12px;
   width: 10px;
   height: 10px;
@@ -350,7 +350,7 @@ h2 {
   align-items: center;
   line-height: 0px;
   padding: 15px 0px 10px 10px;
-  color: black;
+  color: #000000;
 }
 
 .fa-heart {
@@ -359,7 +359,7 @@ h2 {
   padding: 40px 15px 0px 0px;
   text-transform: none;
   font-weight: lighter;
-  color: black;
+  color: #000000;
   cursor: pointer;
   /*&:hover {
       font-weight: bold; 
@@ -566,19 +566,19 @@ a {
   justify-content: left;
   align-items: flex-start;
   font-size: 25px;
-  color: black;
+  color: #000000;
 }
 @media (min-width: 1200px) {
   .fa-arrow-left {
     font-size: 25px;
-    color: black;
+    color: #000000;
     padding: 40px 0px 0px 30px;
   }
 }
 @media (min-width: 992px) {
   .fa-arrow-left {
     font-size: 25px;
-    color: black;
+    color: #000000;
     padding: 40px 0px 0px 30px;
   }
 }
@@ -626,7 +626,7 @@ a {
 }
 
 .container__bg {
-  padding: 10px;
+  padding-right: 5px;
 }
 @media (min-width: 1200px) {
   .container__bg {
@@ -709,7 +709,7 @@ a {
   padding-right: 70px;
 }
 .card__desc:hover .fa-check-circle {
-  color: white;
+  color: #FFFFFF;
   animation: animation-menu 500ms;
   animation-iteration-count: 1;
 }
@@ -761,8 +761,8 @@ a {
   font-weight: lighter;
   text-transform: none;
   font-size: 25px;
-  padding-bottom: 30px;
-  padding-right: 45px;
+  padding-bottom: 25px;
+  padding-right: 35px;
   cursor: pointer;
   color: black;
 }
@@ -790,7 +790,7 @@ a {
   /*margin-top: 0px;*/
   /*padding-top: 0px;*/
   margin-right: 25px;
-  color: white;
+  color: #FFFFFF;
   line-height: 70px;
   transition: transform 100ms;
 }

@@ -70,18 +70,18 @@ h2{
         
         i {
             padding: 0px 20px 0px 20px; 
-            color: gray;
+            color: $thick-shaded-color;
         }
         .fa-store{
             color: $primary-color;
         }
         &.pink {
-            background: #efe2f2;
+            background: $degraded-primary;
         }
     }
     &__number{
         background-color: $primary-color;
-        color: white;
+        color: $box-color;
         font-size: 12px;
         width: 10px;
         height: 10px;
@@ -172,7 +172,7 @@ h2{
     align-items: center;
     line-height: 0px;
     padding: 15px 0px 10px 10px;
-    color: black;
+    color: $realdark-color;
     
 }
 
@@ -182,7 +182,7 @@ h2{
     padding: 40px 15px 0px 0px;
     text-transform: none;
     font-weight: lighter;
-    color: black;
+    color: $realdark-color;
     cursor: pointer;
 
 
