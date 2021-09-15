@@ -151,19 +151,20 @@
     text-align: left;
     position: relative;
     overflow: hidden;
- 
 
     &:hover h3 {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-right: 30px;
+
     }
     &:hover p {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-right: 30px;
+    
     }
 
     & h3{
@@ -185,7 +186,6 @@
     }
     &:hover .fa-check-circle{
         color: $box-color;
-
         animation: animation-menu 500ms;
         animation-iteration-count: 1;
     }

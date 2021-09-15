@@ -112,7 +112,7 @@ h2{
     margin-bottom: -20px;
     background-color: $body-color;
     h2{
-        padding: 30px 0px 0px 30px;
+        padding: 50px 0px 0px 5px;
     }
     @include md {
         width: 100%;
@@ -121,7 +121,7 @@ h2{
 }
 .restaurant__container{
     background-size: cover;
-    padding: 2rem;
+    padding-bottom: 32px;
     max-width: 100%;
     margin-top: 0px;
     @include xl {
@@ -139,7 +139,7 @@ h2{
 }
 .restaurant__card{
     background: $box-color;
-    box-shadow: 2px 2px 2px $body-color;
+    box-shadow: 5px 5px 5px $shaded-color;
     border-radius: 20px;
     margin: 20px;
     height: 250px;
