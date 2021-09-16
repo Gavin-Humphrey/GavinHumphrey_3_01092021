@@ -34,16 +34,17 @@ h2{
 }
 .function{
     height: 300px;
-    @include sm;
     @include xl {
         height: 100px;
     }
+    
     @include md {
         height: 170px;
-
     }
-    
-    
+
+   
+ 
+
     &__steps{
         display: flex;
         justify-items: center;
@@ -57,16 +58,27 @@ h2{
         padding: 0px;
         margin: 20px;
         font-size: 18px;
-        @include sm;
         @include xl {
             width: 30%;
-            height: 90px;
-            margin: 0px;
+            padding: 40px;
+           
+        }
+        @include lg {
+            padding: 40px;
+       
         }
         @include md {
-            height: 100px;
             width: 80%;
+            padding: 20px;
+            margin: 0px;
         }
+        
+        @include sm {
+            max-width: 60%;
+            margin-left: 160px;
+        }
+       
+       
         
         i {
             padding: 0px 20px 0px 20px; 
@@ -89,19 +101,31 @@ h2{
         border-radius: 50px;
         top: 20px;
         margin-left: -10px;
-        @include sm;
+        @include xl {
+            margin-left: -35px;
+        }
+        @include lg {
+            margin-left: -35px;
+        }
+        @include md {
+            margin-left: -35px;
+        }
+       
+        
     }
     &__cnt{
         @include xl{
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
             justify-items: center;
+            margin-right: 120px;
 
         }
         @include md {
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(80px, 1fr));
+            grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
             justify-items: center;
+            margin-right: 120px;
         }
     }
         
@@ -134,8 +158,13 @@ h2{
     }
     @include md{
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
     }
+    @include sm {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    }
+
 }
 .restaurant__card{
     background: $box-color;

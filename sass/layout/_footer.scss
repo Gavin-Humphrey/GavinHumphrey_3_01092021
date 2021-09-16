@@ -3,6 +3,7 @@ footer{
     height: 200px;
     margin-top: 0px;
 
+
     a, h3 {
         color: $box-color;
     }
@@ -28,11 +29,7 @@ footer{
             justify-content: space-between;
             margin-right: 50px;
         }
-        @include md {
-            display: flex;
-            justify-content: space-between;
-            margin-right: 50px;
-        }
+       
        
         
         
