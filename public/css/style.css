@@ -740,6 +740,13 @@ a {
     padding-right: 0px;
   }
 }
+@media (min-width: 768px) {
+  .card__desc:hover h3 {
+    text-overflow: inherit;
+    white-space: break-spaces;
+    padding-right: 50px;
+  }
+}
 .card__desc:hover p {
   overflow: hidden;
   white-space: nowrap;

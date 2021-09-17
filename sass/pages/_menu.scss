@@ -167,6 +167,12 @@
             white-space: break-spaces;
             padding-right: 0px;
         }
+        @include md {
+            text-overflow: inherit;
+            white-space: break-spaces;
+            padding-right: 50px;
+        }
+
     }
     &:hover p {
         overflow: hidden;
@@ -201,6 +207,7 @@
             max-width: 250px;
             font-size: 18px;
         }
+       
     }
     & p {
         margin: 0px;
