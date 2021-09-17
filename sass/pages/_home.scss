@@ -70,7 +70,7 @@ h2{
 
         &:hover {
             background: $degraded-primary;
-            box-shadow: 5px 5px 5px $degraded-primary;
+            box-shadow: 5px 5px 5px $shaded-color;
             & .fa-store {
                 color: $primary-color;
             }
@@ -179,11 +179,11 @@ h2{
     margin-top: 0px;
     @include xl {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(2, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(2px, 1fr));
     } 
     @include xl {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(2, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(2px, 1fr));
     }
     @include md{
         display: grid;
@@ -314,7 +314,7 @@ a {
         width: 0px;
         color: $primary-color;
         animation: bounce 0.6s infinite ease-in-out alternate;
-        transform: translate3d(0);
+        transform: translate3d(0,0,0);
     
        
 

@@ -140,7 +140,7 @@
     width: 50px;
 }
 .card__desc{
-    box-shadow: 2px 5px 2px 2px $bshadow-color;
+    box-shadow: 2px 2px 5px 5px $bshadow-color;
     border-radius: 15px;
     background: $box-color;
     width: 90%;
@@ -150,29 +150,54 @@
     text-align: left;
     position: relative;
     overflow: hidden;
+   
 
     &:hover h3 {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-right: 70px;
+        @include xl {
+            text-overflow: inherit;
+            white-space: break-spaces;
+            padding-right: 0px;
+        }
+        @include lg {
+            text-overflow: inherit;
+            white-space: break-spaces;
+            padding-right: 0px;
+        }
     }
     &:hover p {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-right: 100px;
+        @include xl {
+            text-overflow: inherit;
+            white-space: break-spaces;
+            padding-right: 0px;
+        }
+        @include lg {
+            text-overflow: inherit;
+            white-space: break-spaces;
+            padding-right: 0px;
+        }
        
     }
 
     & h3{
         margin: 0px;
+        font-size: 22px;
         
         @include xl {
-            margin-top: 10px;
+            margin-top: 0px;
+            max-width: 250px;
+
         }
         @include lg {
-            margin-top: 10px;
+            margin-top: 0px;
+            max-width: 250px;
         }
     }
     & p {
@@ -186,6 +211,16 @@
         color: $box-color;
         animation: animation-menu 500ms;
         animation-iteration-count: 1;
+        line-height: 70px;
+        @include xl {
+            line-height: 80px;
+        }
+        @include lg {
+            line-height: 80px;
+        }
+        @include md {
+            line-height: 80px;
+        }
     }
     &:hover > .circleAnime {
         cursor: pointer;
@@ -269,7 +304,7 @@
     /*padding-top: 0px;*/
     margin-right: 25px;
     color: $box-color;
-    line-height: 70px;
+    /*line-height: 70px;*/
     transition: transform 100ms;
 
     @include xl {
