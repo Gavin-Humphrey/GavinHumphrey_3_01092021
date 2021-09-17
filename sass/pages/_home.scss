@@ -54,9 +54,6 @@ h2{
         height: 170px;
     }
 
-   
- 
-
     &__steps{
         display: flex;
         justify-items: center;
@@ -64,12 +61,29 @@ h2{
         align-items: center;
         width: 90%;
         height: 60px;
-        box-shadow: 2px 2px 2px 2px $bshadow-color;
+        box-shadow: 5px 5px 5px $bshadow-color;
         border-radius: 20px;
         background: $body-color;
         padding: 0px;
         margin: 20px;
         font-size: 18px;
+
+        &:hover {
+            background: $degraded-primary;
+            box-shadow: 5px 5px 5px $degraded-primary;
+            & .fa-store {
+                color: $primary-color;
+            }
+            & .fa-mobile-alt {
+                color: $primary-color;
+            }
+            & .fa-list-ul {
+                color: $primary-color;
+            }
+        }
+
+
+
         @include xl {
             width: 30%;
             padding: 40px;
@@ -90,18 +104,22 @@ h2{
             margin-left: 160px;
         }
        
-       
-        
         i {
             padding: 0px 20px 0px 20px; 
             color: $thick-shaded-color;
+
+            @include xl {
+                padding: 0px 10px 0px 10px;
+            }
+            @include lg {
+                padding: 0px 10px 0px 10px;
+            }
+            @include md {
+                padding: 0px 10px 0px 10px;
+            }
         }
-        .fa-store{
-            color: $primary-color;
-        }
-        &.pink {
-            background: $degraded-primary;
-        }
+        
+        
     }
     &__number{
         background-color: $primary-color;
@@ -131,7 +149,6 @@ h2{
             grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
             justify-items: center;
             margin-right: 120px;
-
         }
         @include md {
             display: grid;

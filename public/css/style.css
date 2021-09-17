@@ -231,12 +231,25 @@ h2 {
   align-items: center;
   width: 90%;
   height: 60px;
-  box-shadow: 2px 2px 2px 2px #E6E6E6;
+  box-shadow: 5px 5px 5px #E6E6E6;
   border-radius: 20px;
   background: #F2F2F2;
   padding: 0px;
   margin: 20px;
   font-size: 18px;
+}
+.function__steps:hover {
+  background: #efe2f2;
+  box-shadow: 5px 5px 5px #efe2f2;
+}
+.function__steps:hover .fa-store {
+  color: #9356DC;
+}
+.function__steps:hover .fa-mobile-alt {
+  color: #9356DC;
+}
+.function__steps:hover .fa-list-ul {
+  color: #9356DC;
 }
 @media (min-width: 1200px) {
   .function__steps {
@@ -266,11 +279,20 @@ h2 {
   padding: 0px 20px 0px 20px;
   color: #808080;
 }
-.function__steps .fa-store {
-  color: #9356DC;
+@media (min-width: 1200px) {
+  .function__steps i {
+    padding: 0px 10px 0px 10px;
+  }
 }
-.function__steps.pink {
-  background: #efe2f2;
+@media (min-width: 992px) {
+  .function__steps i {
+    padding: 0px 10px 0px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .function__steps i {
+    padding: 0px 10px 0px 10px;
+  }
 }
 .function__number {
   background-color: #9356DC;
@@ -727,13 +749,13 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-right: 30px;
+  padding-right: 70px;
 }
 .card__desc:hover p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-right: 30px;
+  padding-right: 100px;
 }
 .card__desc h3 {
   margin: 0px;
