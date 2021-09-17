@@ -169,6 +169,26 @@ html, body {
   padding-bottom: 0px;
   margin-top: -22px;
 }
+@media (min-width: 1200px) {
+  .description {
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .description {
+    height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .description {
+    height: 200px;
+  }
+}
+@media (min-width: 576px) {
+  .description {
+    height: 200px;
+  }
+}
 
 h1 {
   padding: 40px 70px 0px 70px;
@@ -398,7 +418,7 @@ h2 {
   }*/
 }
 .fa-heart:hover {
-  font-weight: 900;
+  font-weight: bolder;
   background: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -446,7 +466,7 @@ a {
 }
 .loader > span {
   font-size: 30px;
-  font-weight: 900px;
+  font-weight: bolder;
   height: 0px;
   width: 0px;
   color: #9356DC;
@@ -455,43 +475,43 @@ a {
 }
 .loader > span:nth-child(2) {
   font-size: 30px;
-  font-weight: 900px;
+  font-weight: bolder;
   color: #9356DC;
   animation-delay: 0.2s;
 }
 .loader > span:nth-child(3) {
   font-size: 30px;
-  font-weight: 900px;
+  font-weight: bolder;
   color: #FF79DA;
   animation-delay: 0.4s;
 }
 .loader > span:nth-child(4) {
   font-size: 30px;
-  font-weight: 900px;
+  font-weight: bolder;
   color: #FF79DA;
   animation-delay: 0.6s;
 }
 .loader > span:nth-child(5) {
   font-size: 30px;
-  font-weight: 900px;
+  font-weight: bolder;
   color: #3cb371;
   animation-delay: 0.8s;
 }
 .loader > span:nth-child(6) {
   font-size: 30px;
-  font-weight: 900px;
+  font-weight: bolder;
   color: #3cb371;
   animation-delay: 1s;
 }
 .loader > span:nth-child(7) {
   font-size: 30px;
-  font-weight: 900px;
+  font-weight: bolder;
   color: #99E2D0;
   animation-delay: 1.2s;
 }
 .loader > span:nth-child(8) {
   font-size: 30px;
-  font-weight: 900px;
+  font-weight: bolder;
   color: #99E2D0;
   animation-delay: 1.4s;
 }
@@ -509,7 +529,7 @@ a {
   to {
     width: 60px;
     height: 60px;
-    transform: translate3d(0, -14, 0);
+    transform: translate3d(0, -14px, 0);
   }
 }
 @keyframes animheart {
@@ -794,7 +814,7 @@ a {
   color: black;
 }
 .titleLine__heart:hover {
-  font-weight: 900;
+  font-weight: bolder;
   background: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
