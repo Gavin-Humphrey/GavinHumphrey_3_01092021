@@ -193,11 +193,13 @@
         @include xl {
             margin-top: 0px;
             max-width: 250px;
+            font-size: 20px;
 
         }
         @include lg {
             margin-top: 0px;
             max-width: 250px;
+            font-size: 18px;
         }
     }
     & p {
@@ -295,23 +297,26 @@
         padding-left: 25px;
     }
 }
-.fa-check-circle{
+.fas.fa-check-circle{
     justify-content: center;
     align-items: center;
     float: right;
     font-size: 20px;
-    /*margin-top: 0px;*/
-    /*padding-top: 0px;*/
     margin-right: 25px;
     color: $box-color;
-    /*line-height: 70px;*/
+    line-height: 70px;
     transition: transform 100ms;
 
     @include xl {
         margin-top: 15px;
+        line-height: 80px;
     }
     @include lg {
         margin-top: 15px;
+        line-height: 80px;
+    }
+    @include md {
+        line-height: 80px;
     }
 
 }

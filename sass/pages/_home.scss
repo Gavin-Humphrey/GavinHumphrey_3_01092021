@@ -243,16 +243,6 @@ h2{
     color: $realdark-color;
     cursor: pointer;
 
-
-
-    /*&:hover {
-        font-weight: bold; 
-        background: linear-gradient($primary-color, $secondary-color); 
-        -webkit-background-clip: text; 
-        background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        animation: animheart 3s forwards;
-    }*/
       
     &:hover {
         font-weight: bolder;
@@ -265,14 +255,6 @@ h2{
     }
 }
 
-/*&:active {
-    font-weight: 900;
-    background: linear-gradient(to bottom, $secondary-color, $primary-color);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animheart 200ms ease-in-out;
-    animation-fill-mode: forwards;
-}*/
 
 a {
     text-decoration: none;
@@ -388,12 +370,4 @@ a {
     }
 }
 
-/*@keyframes animheart {
-    0% {
-        transform: scaleY(1);
-    }
-    100% {
-        transform: scaleY(0);
-    }
-    
-}*/
+
