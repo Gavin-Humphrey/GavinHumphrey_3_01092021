@@ -546,6 +546,17 @@ a {
     background-position-y: -32px;
   }
 }
+html, body {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu-head {
   display: flex;
   padding: 20px;
@@ -722,12 +733,12 @@ a {
 }
 @media (min-width: 1200px) {
   .card__desc {
-    box-shadow: 2px 2px 5px 5px #D3D3D3;
+    box-shadow: 1px 2px 5px 5px #D3D3D3;
   }
 }
 @media (min-width: 992px) {
   .card__desc {
-    box-shadow: 2px 2px 5px 5px #D3D3D3;
+    box-shadow: 1px 2px 5px 5px #D3D3D3;
   }
 }
 @media (min-width: 1200px) {
@@ -775,6 +786,21 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-right: 20px;
+}
+@media (min-width: 1200px) {
+  .card__desc:hover p {
+    padding-right: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .card__desc:hover p {
+    padding-right: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .card__desc:hover p {
+    padding-right: 50px;
+  }
 }
 .card__desc h3 {
   margin: 0px;
@@ -871,9 +897,8 @@ a {
   align-items: flex-end;
   font-weight: lighter;
   text-transform: none;
-  font-size: 25px;
-  padding-bottom: 25px;
-  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-right: 10px;
   cursor: pointer;
   color: black;
 }
@@ -886,10 +911,11 @@ a {
   animation: animheart 2s forwards;
 }
 .titleLine h1 {
+  position: static;
   display: flex;
   justify-content: space-between;
   font-family: "Shrikhand";
-  font-size: 25px;
+  font-size: 20px;
   padding-left: 15px;
 }
 @media (min-width: 1200px) {
