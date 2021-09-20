@@ -151,7 +151,7 @@ html, body{
     width: 50px;
 }
 .card__desc{
-    box-shadow: 2px 2px 5px 5px $bshadow-color;
+    box-shadow: 2px 5px 15px 4px $shaded-color;
     border-radius: 15px;
     background: $box-color;
     width: 90%;
@@ -162,17 +162,17 @@ html, body{
     position: relative;
     overflow: hidden;
     @include xl {
-        box-shadow: 1px 2px 5px 5px $shaded-color;
+        box-shadow: 2px 5px 15px 4px $shaded-color;
     }
     @include lg {
-        box-shadow: 1px 2px 5px 5px $shaded-color;
+        box-shadow: 2px 5px 15px 4px $shaded-color;
     }
     &:hover {
         @include xl {
-            box-shadow: 2px 2px 5px 5px $bshadow-color;
+            box-shadow: 2px 5px 15px 4px $bshadow-color;
         }
         @include lg {
-            box-shadow: 2px 2px 5px 5px $bshadow-color;
+            box-shadow: 2px 5px 15px 4px $bshadow-color;
         }
     }
    

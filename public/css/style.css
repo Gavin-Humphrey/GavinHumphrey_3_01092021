@@ -720,7 +720,7 @@ html, body {
 }
 
 .card__desc {
-  box-shadow: 2px 2px 5px 5px #E6E6E6;
+  box-shadow: 2px 5px 15px 4px #D3D3D3;
   border-radius: 15px;
   background: #FFFFFF;
   width: 90%;
@@ -733,22 +733,22 @@ html, body {
 }
 @media (min-width: 1200px) {
   .card__desc {
-    box-shadow: 1px 2px 5px 5px #D3D3D3;
+    box-shadow: 2px 5px 15px 4px #D3D3D3;
   }
 }
 @media (min-width: 992px) {
   .card__desc {
-    box-shadow: 1px 2px 5px 5px #D3D3D3;
+    box-shadow: 2px 5px 15px 4px #D3D3D3;
   }
 }
 @media (min-width: 1200px) {
   .card__desc:hover {
-    box-shadow: 2px 2px 5px 5px #E6E6E6;
+    box-shadow: 2px 5px 15px 4px #E6E6E6;
   }
 }
 @media (min-width: 992px) {
   .card__desc:hover {
-    box-shadow: 2px 2px 5px 5px #E6E6E6;
+    box-shadow: 2px 5px 15px 4px #E6E6E6;
   }
 }
 .card__desc:hover h3 {
