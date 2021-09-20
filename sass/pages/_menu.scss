@@ -300,8 +300,8 @@ html, body{
         align-items: flex-end;
         font-weight: lighter;
         text-transform: none;
-        padding-bottom: 20px;
-        padding-right: 10px;
+        padding-bottom: 25px;
+        padding-right: 20px;
         cursor: pointer;
         color: black;
 
@@ -320,8 +320,11 @@ html, body{
         display: flex;
         justify-content: space-between;
         font-family: 'Shrikhand';
-        font-size: 20px;
+        font-size: 25px;
         padding-left: 15px;
+        white-space: nowrap;
+        text-overflow: inherit;
+
         @include xl {
             font-size: 28px;
         }
