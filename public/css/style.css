@@ -730,6 +730,7 @@ html, body {
   text-align: left;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 @media (min-width: 1200px) {
   .card__desc {

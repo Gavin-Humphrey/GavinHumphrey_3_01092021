@@ -82,8 +82,6 @@ h2{
             }
         }
 
-
-
         @include xl {
             width: 30%;
             padding: 40px;
@@ -243,7 +241,6 @@ h2{
     color: $realdark-color;
     cursor: pointer;
 
-      
     &:hover {
         font-weight: bolder;
         background: linear-gradient(to top, $secondary-color, $primary-color);
@@ -251,10 +248,8 @@ h2{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: animheart 2s forwards;
-   
     }
 }
-
 
 a {
     text-decoration: none;
@@ -275,8 +270,6 @@ a {
     animation-fill-mode: forwards;
     overflow: hidden;
     z-index: 2;
-   
-
 }
 .loader{
     
@@ -286,9 +279,6 @@ a {
     font-family: 'Shrikhand';
     letter-spacing: 10px;
     
-   
-
-
     & > span {
         font-size: 30px;
         font-weight: bolder;
@@ -298,8 +288,6 @@ a {
         animation: bounce 0.6s infinite ease-in-out alternate;
         transform: translate3d(0,0,0);
     
-       
-
         &:nth-child(2) {
             font-size: 30px;
             font-weight: bolder;

@@ -36,8 +36,6 @@ html, body{
        margin: auto;
        padding-bottom: 10px;
    }
-
-
 }
 .pageMenu img{
     width: 100%;
@@ -62,7 +60,6 @@ html, body{
         height: 400px;
         border-radius: 0px;
     }
-
 }
 
 .fa-arrow-left {
@@ -81,8 +78,7 @@ html, body{
         font-size: 25px;
         color: $realdark-color;
         padding: 40px 0px 0px 30px;
-    }
-    
+    }  
 }
 .container__pageMenu{
     background-color: $body-color;
@@ -120,7 +116,6 @@ html, body{
         border-radius: 0px;
         top: -45px;
     }
-
 } 
 .container__bg{
     padding-right: 5px;
@@ -161,6 +156,7 @@ html, body{
     text-align: left;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     @include xl {
         box-shadow: 2px 5px 15px 4px $shaded-color;
     }
@@ -176,7 +172,6 @@ html, body{
         }
     }
    
-
     &:hover h3 {
         overflow: hidden;
         white-space: nowrap;
@@ -200,7 +195,6 @@ html, body{
             text-overflow: ellipsis;
             padding-right: 100px; 
         } 
-
     }
     &:hover p {
         overflow: hidden;
@@ -217,7 +211,6 @@ html, body{
             padding-right: 50px;
         }
     }
-
 
     & h3{
         margin: 0px;
@@ -407,7 +400,6 @@ html, body{
 @keyframes circleAnime {
     0%{
         transform: translateX(-100%);
-    
     
     }
     100%{
